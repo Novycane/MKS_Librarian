@@ -7,20 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE822A111DAD914E00A0A637 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE822A101DAD914E00A0A637 /* AppDelegate.m */; };
+		BE1D5B4A1DBC1EE800CB776E /* MyMIDI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE1D5B461DBC1EE800CB776E /* MyMIDI.cpp */; };
+		BE1D5B4B1DBC1EE800CB776E /* UtilityFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE1D5B481DBC1EE800CB776E /* UtilityFunctions.cpp */; };
+		BE1D5B511DBC1FC600CB776E /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1D5B501DBC1FC600CB776E /* CoreMIDI.framework */; };
+		BE822A111DAD914E00A0A637 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE822A101DAD914E00A0A637 /* AppDelegate.mm */; };
 		BE822A141DAD914E00A0A637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE822A131DAD914E00A0A637 /* main.m */; };
 		BE822A161DAD914E00A0A637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE822A151DAD914E00A0A637 /* Assets.xcassets */; };
 		BE822A191DAD914E00A0A637 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE822A171DAD914E00A0A637 /* MainMenu.xib */; };
+		BEFBFCA51DAF474700437776 /* mks-bkgnd.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFBFCA41DAF474700437776 /* mks-bkgnd.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE1D5B461DBC1EE800CB776E /* MyMIDI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyMIDI.cpp; sourceTree = "<group>"; };
+		BE1D5B471DBC1EE800CB776E /* MyMIDI.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyMIDI.hpp; sourceTree = "<group>"; };
+		BE1D5B481DBC1EE800CB776E /* UtilityFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UtilityFunctions.cpp; sourceTree = "<group>"; };
+		BE1D5B491DBC1EE800CB776E /* UtilityFunctions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UtilityFunctions.hpp; sourceTree = "<group>"; };
+		BE1D5B4D1DBC1F0E00CB776E /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		BE1D5B501DBC1FC600CB776E /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		BE49FA281DBDD2AC0077BD22 /* MKSConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKSConstant.h; sourceTree = "<group>"; };
 		BE822A0C1DAD914E00A0A637 /* MKS Librarian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MKS Librarian.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE822A0F1DAD914E00A0A637 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BE822A101DAD914E00A0A637 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE822A0F1DAD914E00A0A637 /* AppDelegate.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AppDelegate.hh; sourceTree = "<group>"; };
+		BE822A101DAD914E00A0A637 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		BE822A131DAD914E00A0A637 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE822A151DAD914E00A0A637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE822A181DAD914E00A0A637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		BE822A1A1DAD914E00A0A637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA698CF1DBD3A260013DD9B /* SliderEnum.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SliderEnum.hh; sourceTree = "<group>"; };
+		BEFBFCA41DAF474700437776 /* mks-bkgnd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mks-bkgnd.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +41,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1D5B511DBC1FC600CB776E /* CoreMIDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE1D5B4C1DBC1F0E00CB776E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE1D5B501DBC1FC600CB776E /* CoreMIDI.framework */,
+				BE1D5B4D1DBC1F0E00CB776E /* CoreAudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE1D5B4F1DBC1F5C00CB776E /* Midi */ = {
+			isa = PBXGroup;
+			children = (
+				BE1D5B471DBC1EE800CB776E /* MyMIDI.hpp */,
+				BE1D5B461DBC1EE800CB776E /* MyMIDI.cpp */,
+				BE1D5B481DBC1EE800CB776E /* UtilityFunctions.cpp */,
+				BE1D5B491DBC1EE800CB776E /* UtilityFunctions.hpp */,
+			);
+			name = Midi;
+			sourceTree = "<group>";
+		};
 		BE822A031DAD914E00A0A637 = {
 			isa = PBXGroup;
 			children = (
 				BE822A0E1DAD914E00A0A637 /* MKS Librarian */,
 				BE822A0D1DAD914E00A0A637 /* Products */,
+				BE1D5B4C1DBC1F0E00CB776E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,11 +88,15 @@
 		BE822A0E1DAD914E00A0A637 /* MKS Librarian */ = {
 			isa = PBXGroup;
 			children = (
-				BE822A0F1DAD914E00A0A637 /* AppDelegate.h */,
-				BE822A101DAD914E00A0A637 /* AppDelegate.m */,
+				BE822A0F1DAD914E00A0A637 /* AppDelegate.hh */,
+				BE822A101DAD914E00A0A637 /* AppDelegate.mm */,
+				BE49FA281DBDD2AC0077BD22 /* MKSConstant.h */,
+				BEA698CF1DBD3A260013DD9B /* SliderEnum.hh */,
+				BE1D5B4F1DBC1F5C00CB776E /* Midi */,
 				BE822A151DAD914E00A0A637 /* Assets.xcassets */,
 				BE822A171DAD914E00A0A637 /* MainMenu.xib */,
 				BE822A1A1DAD914E00A0A637 /* Info.plist */,
+				BE822A221DAD917200A0A637 /* Images */,
 				BE822A121DAD914E00A0A637 /* Supporting Files */,
 			);
 			path = "MKS Librarian";
@@ -69,6 +108,14 @@
 				BE822A131DAD914E00A0A637 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE822A221DAD917200A0A637 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BEFBFCA41DAF474700437776 /* mks-bkgnd.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEFBFCA51DAF474700437776 /* mks-bkgnd.png in Resources */,
 				BE822A161DAD914E00A0A637 /* Assets.xcassets in Resources */,
 				BE822A191DAD914E00A0A637 /* MainMenu.xib in Resources */,
 			);
@@ -142,7 +190,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE822A141DAD914E00A0A637 /* main.m in Sources */,
-				BE822A111DAD914E00A0A637 /* AppDelegate.m in Sources */,
+				BE1D5B4A1DBC1EE800CB776E /* MyMIDI.cpp in Sources */,
+				BE1D5B4B1DBC1EE800CB776E /* UtilityFunctions.cpp in Sources */,
+				BE822A111DAD914E00A0A637 /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "MKS Librarian/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -263,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "MKS Librarian/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -290,6 +342,7 @@
 				BE822A1F1DAD914E00A0A637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

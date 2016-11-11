@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -11,8 +12,43 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="DCOAfterTouchSlider" destination="Z7V-BU-0aC" id="veh-1o-UjK"/>
+                <outlet property="DCOEnvelopeMode" destination="tpH-66-Wy7" id="DnE-8W-DGY"/>
+                <outlet property="DCOEnvelopeSlider" destination="bSe-L4-CmQ" id="pb7-B8-dgG"/>
+                <outlet property="DCOLFOSlider" destination="imp-RC-rc1" id="zEp-Vc-QN6"/>
+                <outlet property="DCORangeSlider" destination="l1o-lm-6qe" id="Bhd-2L-YoK"/>
+                <outlet property="EnvelopeModeSlider" destination="q1X-GV-raK" id="b9v-aj-sJy"/>
+                <outlet property="HPFSlider" destination="YQG-b7-PAy" id="vQS-QD-QaE"/>
+                <outlet property="LFODelaySlider" destination="Elo-FK-eu7" id="ar7-AJ-vqZ"/>
+                <outlet property="LFORateSlider" destination="5ns-dZ-RbL" id="MRd-Im-BDk"/>
+                <outlet property="PWMAmountSlider" destination="OOr-eb-AFA" id="3S2-9e-cvs"/>
+                <outlet property="PWMRateSlider" destination="nU5-me-rbN" id="LeI-HH-ZsC"/>
+                <outlet property="VCALevelSlider" destination="ysA-Xl-rVb" id="Shz-V7-p6t"/>
+                <outlet property="VCFAfterSlider" destination="myU-Iu-7rn" id="4xF-Ik-sV0"/>
+                <outlet property="VCFEnvSlider" destination="z0c-5K-WPq" id="yL9-Xi-3lI"/>
+                <outlet property="VCFFreqSlider" destination="skE-S1-XfC" id="BfA-Mu-ct0"/>
+                <outlet property="VCFKeyFollowSlider" destination="mwu-IK-J6E" id="t2F-ch-roR"/>
+                <outlet property="VCFLFOSlider" destination="kIv-gW-8IJ" id="Fum-gP-sTL"/>
+                <outlet property="VCFResSlider" destination="Dp5-FP-zXy" id="bSD-sE-hEe"/>
+                <outlet property="VDFEnvShapeSlider" destination="mNT-zs-boY" id="b0E-7Q-Vsc"/>
+                <outlet property="chorusOnOffSlider" destination="QgW-n6-csj" id="OfL-QI-UOa"/>
+                <outlet property="chorusRateSlider" destination="N5D-J9-FSd" id="3Kx-aW-jVB"/>
+                <outlet property="envelopeAfterTouchSlide" destination="9GM-Qe-slt" id="U2g-4g-F1k"/>
+                <outlet property="envelopeKeyFollowSlider" destination="mHf-Is-cfe" id="teo-s8-mj7"/>
+                <outlet property="envelopeL1Slider" destination="wCd-l2-xF8" id="CPt-SO-Wpf"/>
+                <outlet property="envelopeL2Slider" destination="J8E-FV-vuH" id="O5w-i0-nGl"/>
+                <outlet property="envelopeL3Slider" destination="x8e-oF-0HQ" id="b8l-ep-C8J"/>
+                <outlet property="envelopeT1Slider" destination="tSY-sW-nza" id="MJe-gk-VQV"/>
+                <outlet property="envelopeT2Slider" destination="1ga-yq-wmX" id="KJr-Hd-kpm"/>
+                <outlet property="envelopeT3Slider" destination="1mU-3p-sgT" id="WM3-mS-LcP"/>
+                <outlet property="envelopeT4Slider" destination="bHT-v5-Zd4" id="Pbi-Ac-btU"/>
+                <outlet property="noiseLevelSlider" destination="7tM-Yb-34i" id="N2s-OR-a1n"/>
+                <outlet property="pulseWaveSlider" destination="Z0k-z9-Xvq" id="JsW-Ob-Cqz"/>
+                <outlet property="sawWaveSlider" destination="dOf-L0-zwc" id="nac-GA-q51"/>
+                <outlet property="subLevelSlider" destination="Tg1-Rx-Kmc" id="lfg-Si-KNf"/>
+                <outlet property="subWaveSlider" destination="76L-s9-m2n" id="t3U-gR-xe5"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -67,9 +103,15 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="File" id="bib-Uj-vzu">
                         <items>
-                            <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl">
+                            <menuItem title="New Patch" keyEquivalent="n" id="Was-JA-tGl">
                                 <connections>
-                                    <action selector="newDocument:" target="-1" id="4Si-XN-c54"/>
+                                    <action selector="fileNewPatchClicked:" target="Voe-Tx-rLC" id="71E-TG-D4X"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="New Tone" id="ah5-pu-iez">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="fileNewToneClicked:" target="Voe-Tx-rLC" id="v9r-5B-Vdg"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
@@ -681,12 +723,375 @@
         <window title="MKS Librarian" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="contentRect" x="224" y="77" width="819" height="614"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <value key="minSize" type="size" width="819" height="614"/>
+            <value key="maxSize" type="size" width="819" height="614"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="819" height="614"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqo-ur-0fb">
+                        <rect key="frame" x="0.0" y="-1" width="820" height="615"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="topLeft" imageScaling="proportionallyDown" image="mks-bkgnd" id="Btu-W9-CnZ"/>
+                    </imageView>
+                    <slider identifier="2" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l1o-lm-6qe">
+                        <rect key="frame" x="151" y="483" width="24" height="107"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="3" tickMarkPosition="left" numberOfTickMarks="4" allowsTickMarkValuesOnly="YES" sliderType="linear" id="byL-b5-jvV">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="ALe-It-Qg6"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="0" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ns-dZ-RbL">
+                        <rect key="frame" x="24" y="419" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" identifier="1" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="fRU-df-w2o">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="yH8-k3-Pfl"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="5" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tpH-66-Wy7">
+                        <rect key="frame" x="315" y="474" width="24" height="111"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="3" doubleValue="3" tickMarkPosition="left" numberOfTickMarks="4" allowsTickMarkValuesOnly="YES" sliderType="linear" id="qcp-8d-Fmx">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="gJm-qz-ct8"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="7" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0k-z9-Xvq">
+                        <rect key="frame" x="41" y="287" width="24" height="107"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="3" tickMarkPosition="left" numberOfTickMarks="4" allowsTickMarkValuesOnly="YES" sliderType="linear" id="hsM-1d-m3N">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="U2X-hn-kvG"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="23" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q1X-GV-raK">
+                        <rect key="frame" x="96" y="77" width="24" height="107"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="3" doubleValue="3" tickMarkPosition="left" numberOfTickMarks="4" allowsTickMarkValuesOnly="YES" sliderType="linear" id="pIA-Rd-w6Z">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="dIe-12-22b"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="19" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNT-zs-boY">
+                        <rect key="frame" x="669" y="287" width="24" height="107"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="3" tickMarkPosition="left" numberOfTickMarks="4" allowsTickMarkValuesOnly="YES" sliderType="linear" id="r8a-gx-CEy">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="vxX-vr-cDC"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="14" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YQG-b7-PAy">
+                        <rect key="frame" x="440" y="228" width="24" height="112"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="3" tickMarkPosition="left" numberOfTickMarks="4" allowsTickMarkValuesOnly="YES" sliderType="linear" id="QWQ-0O-O1N">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="P1Z-Pf-mkk"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="10" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tg1-Rx-Kmc">
+                        <rect key="frame" x="235" y="226" width="24" height="107"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="3" tickMarkPosition="left" numberOfTickMarks="4" allowsTickMarkValuesOnly="YES" sliderType="linear" id="WKW-P3-mtf">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="8sD-bq-Cv6"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="11" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7tM-Yb-34i">
+                        <rect key="frame" x="276" y="226" width="24" height="107"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="3" tickMarkPosition="left" numberOfTickMarks="4" allowsTickMarkValuesOnly="YES" sliderType="linear" id="pBe-vB-9UU">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="Bqy-8B-So0"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="8" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOf-L0-zwc">
+                        <rect key="frame" x="96" y="226" width="24" height="174"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="5" tickMarkPosition="left" numberOfTickMarks="6" allowsTickMarkValuesOnly="YES" sliderType="linear" id="2O3-eK-Fpe">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="sgR-HM-yZT"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="9" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="76L-s9-m2n">
+                        <rect key="frame" x="168" y="226" width="24" height="174"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="5" tickMarkPosition="left" numberOfTickMarks="6" allowsTickMarkValuesOnly="YES" sliderType="linear" id="Koc-YE-c71">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="251-Z1-Oib"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="4" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bSe-L4-CmQ">
+                        <rect key="frame" x="232" y="419" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="nIZ-ES-exx">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="pRR-c5-g2I"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="6" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z7V-BU-0aC">
+                        <rect key="frame" x="358" y="419" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="CGs-aR-kSj">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="ypw-K7-OsN"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="13" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nU5-me-rbN">
+                        <rect key="frame" x="358" y="227" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="WEp-cL-eUn">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="Dsm-hW-AX1"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="12" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OOr-eb-AFA">
+                        <rect key="frame" x="316" y="227" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="CH4-ZV-4oV">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="FoZ-pO-888"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="22" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ysA-Xl-rVb">
+                        <rect key="frame" x="25" y="19" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="Pd2-2J-ZBS">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="uvM-Yu-9rF"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="24" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9GM-Qe-slt">
+                        <rect key="frame" x="150" y="19" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="Tnw-Uw-48Y">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="YDC-EC-ATr"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="26" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5D-J9-FSd">
+                        <rect key="frame" x="276" y="19" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="KM6-v3-uod">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="B9A-vh-F1T"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="27" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tSY-sW-nza">
+                        <rect key="frame" x="358" y="19" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="O7K-uc-sIJ">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="TI4-Cd-dV4"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="29" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ga-yq-wmX">
+                        <rect key="frame" x="439" y="19" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="c3E-tj-YEa">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="QIB-zL-kOY"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="30" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J8E-FV-vuH">
+                        <rect key="frame" x="479" y="19" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="RXT-3A-UaH">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="pg9-LB-Oq6"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="31" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1mU-3p-sgT">
+                        <rect key="frame" x="519" y="19" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="fJI-3g-Iy2">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="L13-Z8-iLc"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="32" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x8e-oF-0HQ">
+                        <rect key="frame" x="559" y="19" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="97W-tg-b1N">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="G8r-mg-m0G"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="33" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHT-v5-Zd4">
+                        <rect key="frame" x="599" y="19" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="TSq-2w-lBv">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="t3z-m1-RvC"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="34" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mHf-Is-cfe">
+                        <rect key="frame" x="638" y="19" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="kd3-8q-4bL">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="hG1-hP-hNs"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="15" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="skE-S1-XfC">
+                        <rect key="frame" x="483" y="227" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="Ut5-fI-yvF">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="nK3-Z3-1Je"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="16" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dp5-FP-zXy">
+                        <rect key="frame" x="525" y="227" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="stw-G6-HfV">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="sAg-ya-zQR"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="17" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIv-gW-8IJ">
+                        <rect key="frame" x="567" y="227" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="dWk-8Y-D7A">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="tEh-pp-NJO"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="18" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z0c-5K-WPq">
+                        <rect key="frame" x="609" y="227" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="K6g-D2-VUz">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="ecg-Xh-ASW"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="20" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mwu-IK-J6E">
+                        <rect key="frame" x="720" y="228" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="3DX-lQ-bFU">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="odU-S1-PwE"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="21" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="myU-Iu-7rn">
+                        <rect key="frame" x="760" y="228" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="zWo-Gz-Exf">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="hN5-Ck-zsf"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="25" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QgW-n6-csj">
+                        <rect key="frame" x="235" y="19" width="24" height="57"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" tickMarkPosition="left" numberOfTickMarks="2" allowsTickMarkValuesOnly="YES" sliderType="linear" id="J9Q-Qo-Jca">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="muh-Bv-eU1"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="3" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="imp-RC-rc1">
+                        <rect key="frame" x="191" y="419" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="vS6-eP-OsK">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="Vso-q8-jPN"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="28" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wCd-l2-xF8">
+                        <rect key="frame" x="399" y="19" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="6co-Yr-yDE">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="6x5-tU-cpl"/>
+                        </connections>
+                    </slider>
+                    <slider identifier="1" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Elo-FK-eu7">
+                        <rect key="frame" x="64" y="419" width="24" height="166"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="Jwe-NW-51t">
+                            <font key="font" metaFont="system"/>
+                        </sliderCell>
+                        <connections>
+                            <action selector="sliderDidMove:" target="Voe-Tx-rLC" id="rIf-VH-x7y"/>
+                        </connections>
+                    </slider>
+                </subviews>
             </view>
+            <point key="canvasLocation" x="339.5" y="564"/>
         </window>
     </objects>
+    <resources>
+        <image name="mks-bkgnd" width="819.20001220703125" height="614.4000244140625"/>
+    </resources>
 </document>
