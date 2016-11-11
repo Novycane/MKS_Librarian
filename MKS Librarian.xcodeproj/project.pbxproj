@@ -14,7 +14,10 @@
 		BE822A141DAD914E00A0A637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE822A131DAD914E00A0A637 /* main.m */; };
 		BE822A161DAD914E00A0A637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE822A151DAD914E00A0A637 /* Assets.xcassets */; };
 		BE822A191DAD914E00A0A637 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE822A171DAD914E00A0A637 /* MainMenu.xib */; };
-		BEFBFCA51DAF474700437776 /* mks-bkgnd.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFBFCA41DAF474700437776 /* mks-bkgnd.png */; };
+		BE952E181DD6408300B4648F /* mks-bkgnd.png in Resources */ = {isa = PBXBuildFile; fileRef = BE952E171DD6408300B4648F /* mks-bkgnd.png */; };
+		BE952E1A1DD64F9D00B4648F /* Button Idle.png in Resources */ = {isa = PBXBuildFile; fileRef = BE952E191DD64F9D00B4648F /* Button Idle.png */; };
+		BE952E1C1DD64FA400B4648F /* Patch Button Lit.png in Resources */ = {isa = PBXBuildFile; fileRef = BE952E1B1DD64FA400B4648F /* Patch Button Lit.png */; };
+		BE952E1F1DD6500900B4648F /* PatchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BE952E1E1DD6500900B4648F /* PatchButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +35,12 @@
 		BE822A151DAD914E00A0A637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE822A181DAD914E00A0A637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		BE822A1A1DAD914E00A0A637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE952E171DD6408300B4648F /* mks-bkgnd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mks-bkgnd.png"; sourceTree = "<group>"; };
+		BE952E191DD64F9D00B4648F /* Button Idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button Idle.png"; sourceTree = "<group>"; };
+		BE952E1B1DD64FA400B4648F /* Patch Button Lit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Patch Button Lit.png"; sourceTree = "<group>"; };
+		BE952E1D1DD6500900B4648F /* PatchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatchButton.h; sourceTree = "<group>"; };
+		BE952E1E1DD6500900B4648F /* PatchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatchButton.m; sourceTree = "<group>"; };
 		BEA698CF1DBD3A260013DD9B /* SliderEnum.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SliderEnum.hh; sourceTree = "<group>"; };
-		BEFBFCA41DAF474700437776 /* mks-bkgnd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mks-bkgnd.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +105,7 @@
 				BE822A1A1DAD914E00A0A637 /* Info.plist */,
 				BE822A221DAD917200A0A637 /* Images */,
 				BE822A121DAD914E00A0A637 /* Supporting Files */,
+				BE952E201DD6501600B4648F /* UI */,
 			);
 			path = "MKS Librarian";
 			sourceTree = "<group>";
@@ -113,9 +121,20 @@
 		BE822A221DAD917200A0A637 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				BEFBFCA41DAF474700437776 /* mks-bkgnd.png */,
+				BE952E171DD6408300B4648F /* mks-bkgnd.png */,
+				BE952E1B1DD64FA400B4648F /* Patch Button Lit.png */,
+				BE952E191DD64F9D00B4648F /* Button Idle.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		BE952E201DD6501600B4648F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BE952E1D1DD6500900B4648F /* PatchButton.h */,
+				BE952E1E1DD6500900B4648F /* PatchButton.m */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +195,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEFBFCA51DAF474700437776 /* mks-bkgnd.png in Resources */,
+				BE952E1A1DD64F9D00B4648F /* Button Idle.png in Resources */,
+				BE952E181DD6408300B4648F /* mks-bkgnd.png in Resources */,
 				BE822A161DAD914E00A0A637 /* Assets.xcassets in Resources */,
 				BE822A191DAD914E00A0A637 /* MainMenu.xib in Resources */,
+				BE952E1C1DD64FA400B4648F /* Patch Button Lit.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +214,7 @@
 				BE1D5B4A1DBC1EE800CB776E /* MyMIDI.cpp in Sources */,
 				BE1D5B4B1DBC1EE800CB776E /* UtilityFunctions.cpp in Sources */,
 				BE822A111DAD914E00A0A637 /* AppDelegate.mm in Sources */,
+				BE952E1F1DD6500900B4648F /* PatchButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

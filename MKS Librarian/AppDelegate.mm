@@ -11,6 +11,7 @@
 #import "MyMidi.hpp"
 #import "MKSConstant.h"
 #import "UtilityFunctions.hpp"
+#import "PatchButton.h"
 
 @interface AppDelegate ()
 
@@ -58,6 +59,7 @@
 @property int patchNumber;
 @property int toneNumber;
 @property int midiChannel;
+@property PatchButton* lastButtonPressed;
 
 @end
 
@@ -307,6 +309,13 @@
 - (IBAction)fileNewPatchClicked:(id)sender
 {
     [self initPatch];
+}
+
+- (IBAction)patchButtonPressed:(id)sender
+{
+    if(self.lastButtonPressed != nil)
+        [self.lastButtonPressed setNextState];
+    self.lastButtonPressed = (PatchButton*) sender;
 }
 
 

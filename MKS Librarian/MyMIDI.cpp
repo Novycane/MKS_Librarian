@@ -50,7 +50,7 @@ void MyMidiReadProc(const MIDIPacketList* pktlist, void* refcon, void* connRefco
         printf("\n");
         for(int i=0; i< packet->length; i++)
         {
-            printf("Sysex byth %d : %2X\n", i, packet->data[i]);
+            printf("Sysex byte %d : %2X\n", i, packet->data[i]);
         }
     }
     else
