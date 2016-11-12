@@ -724,7 +724,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="224" y="77" width="819" height="614"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <value key="minSize" type="size" width="819" height="614"/>
             <value key="maxSize" type="size" width="819" height="614"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
@@ -1089,7 +1089,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="As3-GS-OTn" customClass="PatchButton">
                         <rect key="frame" x="455" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="7Q8-I3-MBg">
+                        <buttonCell key="cell" type="square" title="0" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="7Q8-I3-MBg">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1100,7 +1100,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ilJ-5W-BJb" customClass="PatchButton">
                         <rect key="frame" x="455" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="7lU-fY-t8i">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="7lU-fY-t8i">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1108,1390 +1108,1390 @@
                             <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="zFl-B2-S06"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="859-85-skG" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqA-Dn-zWc" customClass="PatchButton">
                         <rect key="frame" x="455" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="7wp-MV-rcP">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="IGj-KI-tt1">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="TRT-jM-SYZ"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="W26-2v-OmP"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgd-oP-26d" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JsL-wa-hjH" customClass="PatchButton">
                         <rect key="frame" x="455" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="75g-rL-rvD">
+                        <buttonCell key="cell" type="square" title="3" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="yjT-Vp-C7X">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Prx-cz-v1S"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="cmD-rw-fpE"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pKm-Za-MxD" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hBD-Pz-LWc" customClass="PatchButton">
                         <rect key="frame" x="455" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="rr0-Ws-ueq">
+                        <buttonCell key="cell" type="square" title="4" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5Oq-Hx-EhD">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="3w5-PZ-oiB"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="I0g-W8-is1"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sen-Wc-v4J" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aq7-VE-4TR" customClass="PatchButton">
                         <rect key="frame" x="455" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="eVy-Vp-fvN">
+                        <buttonCell key="cell" type="square" title="5" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="J7p-Ej-JEp">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="xAn-RW-kXS"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="w67-vM-Rop"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4VR-ym-ZoS" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gw5-iz-ah1" customClass="PatchButton">
                         <rect key="frame" x="455" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="k37-SQ-okz">
+                        <buttonCell key="cell" type="square" title="6" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="aY4-Lw-q0o">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="AEd-wC-8sQ"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="wxM-JJ-3kG"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="162-iN-bul" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tdv-Cc-k0a" customClass="PatchButton">
                         <rect key="frame" x="455" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="X6A-wb-L6S">
+                        <buttonCell key="cell" type="square" title="7" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="at8-hc-YIB">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="A3k-VV-3D8"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="6I1-XV-uTb"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aY0-YL-oQI" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gp-zZ-QKa" customClass="PatchButton">
                         <rect key="frame" x="474" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="sEa-3u-cFt">
+                        <buttonCell key="cell" type="square" title="8" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="UHT-bo-E7d">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="fpi-ja-noF"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="KjG-5J-X3x"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="crh-YM-ClA" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-zx-WQL" customClass="PatchButton">
                         <rect key="frame" x="474" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="kyn-vF-cFa">
+                        <buttonCell key="cell" type="square" title="9" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="xdc-ss-DSv">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="oDn-8h-aSX"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="UKm-yA-Ri2"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VBp-0e-H9F" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fH1-WS-1iz" customClass="PatchButton">
                         <rect key="frame" x="474" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Nil-1u-SkO">
+                        <buttonCell key="cell" type="square" title="10" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5Az-VG-8Ig">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="gY5-nJ-FDO"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="jDK-he-rku"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DV8-iD-bzT" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MOi-Ef-iZY" customClass="PatchButton">
                         <rect key="frame" x="474" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="A4c-Re-b2x">
+                        <buttonCell key="cell" type="square" title="11" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="RaH-lf-sJL">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="msD-hG-b5W"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="2dh-ED-97p"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hsy-dL-IOx" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SsL-Wm-Ha9" customClass="PatchButton">
                         <rect key="frame" x="474" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="yrK-cz-DTQ">
+                        <buttonCell key="cell" type="square" title="12" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Oc7-K5-xy6">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="vMh-Ux-Llp"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="SJe-pZ-AgB"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lnj-uv-jCa" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3EO-J0-uns" customClass="PatchButton">
                         <rect key="frame" x="474" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ohK-IO-htb">
+                        <buttonCell key="cell" type="square" title="13" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="8EE-7h-LLT">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="0JI-nu-ECG"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="smh-en-O0n"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vt0-iN-ILW" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dps-cc-t4Y" customClass="PatchButton">
                         <rect key="frame" x="474" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Raf-Zw-4ha">
+                        <buttonCell key="cell" type="square" title="14" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="yZg-wp-dKP">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="clp-vS-5ga"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="gjd-cj-Emb"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ih-Ny-yPC" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s3S-oE-v4F" customClass="PatchButton">
                         <rect key="frame" x="474" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="o8b-6h-sqh">
+                        <buttonCell key="cell" type="square" title="15" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="iuI-Hn-RnQ">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="bZC-C1-tSO"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="wBC-nX-UGa"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xvP-fg-qSF" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OqT-R9-U3x" customClass="PatchButton">
                         <rect key="frame" x="493" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="FhL-Ef-qhW">
+                        <buttonCell key="cell" type="square" title="16" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="833-bO-oJ3">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Pqz-CC-vpB"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="TTU-TI-KaX"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v4q-0n-fCe" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V6W-s5-Jy5" customClass="PatchButton">
                         <rect key="frame" x="493" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jiX-1t-Pyf">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="E2j-PQ-HNH">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="vFz-QC-hbA"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="P3G-XW-M7R"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNP-Lt-cbC" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHH-Ti-Utd" customClass="PatchButton">
                         <rect key="frame" x="493" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="SCH-8P-ldL">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="dG9-N9-rAp">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="ghU-PE-rU1"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="BJt-AI-0cj"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5RC-6q-EOS" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="25c-X2-7NO" customClass="PatchButton">
                         <rect key="frame" x="493" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ggV-kU-dRS">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Nq9-w6-a8G">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="1Mh-hA-j35"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="sUh-aj-gw9"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGg-6S-DYs" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0u2-6w-1o0" customClass="PatchButton">
                         <rect key="frame" x="493" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ypo-1Q-xu0">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="KhU-eJ-k5f">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="lpU-Ki-6ew"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="E4m-xs-yK3"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RQM-Ot-Tzg" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTK-X8-KVL" customClass="PatchButton">
                         <rect key="frame" x="493" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="818-p5-Lco">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="DfW-hI-YQb">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="SVK-YH-Cmr"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="caA-9E-GYN"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NJN-aC-xup" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MnT-Sw-RWC" customClass="PatchButton">
                         <rect key="frame" x="493" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="g42-1m-WHt">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Log-7k-cnZ">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="2Wp-jT-c3r"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="2uq-jr-fv2"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QEt-2k-f0e" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2Y-LU-MXY" customClass="PatchButton">
                         <rect key="frame" x="493" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="VPH-5t-AbF">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="if9-5k-8Hw">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="BIt-7i-QoR"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="lU0-Qu-024"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="orP-ph-Nuz" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ser-c9-Mhn" customClass="PatchButton">
                         <rect key="frame" x="512" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="VLE-LG-Zp8">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="6ZF-hZ-ZAR">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="3kx-1r-fAI"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="YYu-0f-fnv"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5IH-oA-CCb" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wDm-l0-ak9" customClass="PatchButton">
                         <rect key="frame" x="512" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="FBt-AQ-smC">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="p3Y-fc-2yd">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="c6Q-PW-8qG"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="b9M-kq-SY3"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gzv-AV-eep" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lRH-JK-0lP" customClass="PatchButton">
                         <rect key="frame" x="512" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="g8f-dD-BmQ">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="js0-db-qX8">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="XdD-iN-ZVZ"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="zwB-uq-cMk"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="478-WC-ZsJ" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgf-2G-egV" customClass="PatchButton">
                         <rect key="frame" x="512" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="QVX-Xz-vMV">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="QGs-MH-ub7">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Hen-G0-jJ1"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="sBS-HF-5E6"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wX0-Yv-tJJ" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09F-qK-tJU" customClass="PatchButton">
                         <rect key="frame" x="512" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Ajy-9j-DEW">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Dli-jR-RWq">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="A8W-3I-n9r"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="O0d-60-6iC"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RL1-68-V98" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5E-pw-hTB" customClass="PatchButton">
                         <rect key="frame" x="512" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="cES-9p-XDs">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="hgY-QH-TWC">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="YA1-c0-uFK"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="c5l-fp-NsV"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-rH-3ij" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FVi-gu-CPU" customClass="PatchButton">
                         <rect key="frame" x="512" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="p9m-we-Dyp">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5lk-Iq-k4j">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Zcx-kh-D3f"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="bmV-U4-iSB"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q65-vX-3hI" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVM-Pd-5KV" customClass="PatchButton">
                         <rect key="frame" x="512" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="pWk-UY-3NT">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="CMT-Wo-rjA">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="xwY-ST-haL"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="E9B-by-Q6q"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mX-VX-IS0" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6k1-Rr-z1n" customClass="PatchButton">
                         <rect key="frame" x="531" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="SKh-pu-Z0c">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="YXp-uR-GvE">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="nXy-c6-Jax"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="3jA-Nv-FIG"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oeR-tG-YiG" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hVn-Rt-5LP" customClass="PatchButton">
                         <rect key="frame" x="531" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="9FD-Hu-uaF">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="1kO-SV-fdy">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="7Df-mL-TDM"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Jav-dG-AtL"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMJ-Lv-8OB" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HVB-la-1xN" customClass="PatchButton">
                         <rect key="frame" x="531" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="zn8-OA-FOq">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="KXV-5O-y5Y">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="gdz-Im-dIy"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="mtv-DX-lPN"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qdu-Iq-ieq" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="35l-z1-DnK" customClass="PatchButton">
                         <rect key="frame" x="531" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="CFg-LY-esK">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="lMH-12-oLn">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="wjj-8I-51O"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="lEW-B7-IP3"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWL-GI-A1X" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xeh-Up-t07" customClass="PatchButton">
                         <rect key="frame" x="531" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hGo-mj-ixk">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="zbw-6y-NNW">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="m97-1a-rTo"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="4fu-nq-qjo"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXs-Ew-fgq" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S1y-Wc-493" customClass="PatchButton">
                         <rect key="frame" x="531" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="JZO-Iy-TKP">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="KXW-9E-lgR">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="xGd-uB-0VS"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="6pT-TG-nvu"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1lK-tc-c6o" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="foW-fX-B3g" customClass="PatchButton">
                         <rect key="frame" x="531" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="I2U-cc-y9b">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="m4x-bt-tbA">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="f6I-1Q-cHL"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="8bp-8h-Ra4"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="foT-oD-mdz" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygK-mm-goD" customClass="PatchButton">
                         <rect key="frame" x="531" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="CkX-9w-wSP">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3C7-ow-hj4">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="t1R-nl-j8X"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Jgp-QF-MUV"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lmw-wl-o8c" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="asa-Wg-0Iz" customClass="PatchButton">
                         <rect key="frame" x="550" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="9oy-DA-Esx">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="2NV-ts-l7L">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="0FG-Zw-MGq"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="sXA-33-HqO"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gf3-XP-1WM" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fCA-Yj-NwD" customClass="PatchButton">
                         <rect key="frame" x="550" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="pwt-F7-PrD">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Fsm-97-SjV">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="AQc-TN-Tie"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="00g-Rh-kVi"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EG6-ra-4TW" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1U-HS-VIl" customClass="PatchButton">
                         <rect key="frame" x="550" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="W4Y-6z-MCm">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="cAQ-tB-G2H">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="0vu-DT-w1v"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="8kq-Bx-RJx"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="498-0z-jAN" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pyV-5t-yIJ" customClass="PatchButton">
                         <rect key="frame" x="550" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Y90-WU-pgF">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="74Y-F8-OMj">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="fBZ-u9-RRX"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="lYs-4z-rRw"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Drc-Ds-zGq" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5uJ-1H-5br" customClass="PatchButton">
                         <rect key="frame" x="550" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="5Ts-Zd-kV2">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="i8J-hM-y1Q">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="vNi-Zr-nxg"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="TE5-Go-MsB"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FIy-a6-Sda" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="15V-ap-EDs" customClass="PatchButton">
                         <rect key="frame" x="550" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="DZz-Jj-T9K">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="SDg-b3-l2Q">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="KCL-fQ-dKF"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="PYz-02-aGT"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6p-f7-Tp6" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qhb-Gx-ffY" customClass="PatchButton">
                         <rect key="frame" x="550" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="naZ-4B-pvk">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Xqq-Y1-VNO">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="BXE-Bc-qt0"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="sNP-dk-MM6"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mqn-6q-MkY" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ahu-KN-sKF" customClass="PatchButton">
                         <rect key="frame" x="550" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Nii-Ng-aoa">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Kdm-dX-QPO">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="9AY-h4-0NL"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Bh4-mM-v5A"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TpC-iC-4bA" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQR-CW-EBZ" customClass="PatchButton">
                         <rect key="frame" x="569" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="sKZ-YR-3fM">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Ld2-el-UML">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="h84-rT-o6l"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="86H-7l-oBd"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4G4-85-LYQ" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fwy-P1-Lxf" customClass="PatchButton">
                         <rect key="frame" x="569" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="qPp-Sx-rVh">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="xut-cF-oyj">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="xeh-MO-FpM"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="0Ha-7c-KQI"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QdU-RK-SGG" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAt-Bp-6Yw" customClass="PatchButton">
                         <rect key="frame" x="569" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="aHh-fN-RF2">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5yU-Ku-zTR">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="9pq-vF-5MN"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="lyQ-nT-Tee"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tte-Ib-p6I" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="knv-KV-itJ" customClass="PatchButton">
                         <rect key="frame" x="569" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="LGH-hh-tin">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="L2g-Wq-dRW">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="S86-9Y-Q9d"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="oFY-Ml-1hB"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tvK-d0-DhC" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pad-Fl-tt9" customClass="PatchButton">
                         <rect key="frame" x="569" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jvq-pS-3J0">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="7XX-rj-d5b">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="2Lk-a5-uwK"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="KR3-Ek-WQk"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJl-11-JJy" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MA2-zh-I2K" customClass="PatchButton">
                         <rect key="frame" x="569" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="NiH-tl-baG">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5mT-g7-H8a">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="HfA-m8-tNu"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="ZTS-1U-r9F"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NgS-bu-QtI" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCF-lX-ldf" customClass="PatchButton">
                         <rect key="frame" x="569" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="6M6-OF-QIq">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="scP-r9-xCk">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="flZ-kR-Zex"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="J5o-q6-9eY"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQl-QD-exy" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZd-Ic-oBV" customClass="PatchButton">
                         <rect key="frame" x="569" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Quw-HW-pUO">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="HN3-wi-h6d">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="E07-tC-BmY"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Fgs-a1-AQh"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5x-ZG-qiK" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7H-FX-bSs" customClass="PatchButton">
                         <rect key="frame" x="588" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="CzN-8e-h5d">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="x1a-rp-bhi">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="MbI-zs-IZK"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="T39-s2-aGd"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tse-6h-TvF" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q7S-Tc-Gux" customClass="PatchButton">
                         <rect key="frame" x="588" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jRJ-ra-Kiq">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="lVP-Bq-YA1">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="JC3-Ib-pkp"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Zxz-5h-T04"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKH-OM-Xnc" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JPM-Fc-paX" customClass="PatchButton">
                         <rect key="frame" x="588" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Pc3-6N-qtO">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="uEy-Yz-1gm">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="EBp-ge-hk2"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="0XB-z3-Taq"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uYh-se-7L1" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TB2-vh-lX9" customClass="PatchButton">
                         <rect key="frame" x="588" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0em-bv-E1X">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="bbu-Oi-S2c">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="xui-ZQ-R5L"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Eq3-Fc-qEF"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZZX-tf-seM" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNQ-5k-H9g" customClass="PatchButton">
                         <rect key="frame" x="588" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="maT-K3-5dx">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="eff-ZH-fga">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Sxb-K6-UNv"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="bjT-KC-Z7V"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FpU-8o-Mab" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42m-ey-a8Q" customClass="PatchButton">
                         <rect key="frame" x="588" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="qam-QA-7bM">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="ZVJ-Jm-vSa">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="2aq-t0-O0r"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="i38-BT-duL"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t9Y-Lo-uZO" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAV-JU-6jw" customClass="PatchButton">
                         <rect key="frame" x="588" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="F47-py-3dc">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="sIc-Eq-5Mh">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="uFR-0v-nTQ"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="szI-hA-Mc2"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R5V-W7-a5n" customClass="PatchButton">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oml-TE-Mvn" customClass="PatchButton">
                         <rect key="frame" x="588" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="kAZ-VO-qR9">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="XdH-ra-QOD">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="f5b-Hg-uZg"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="GEG-TO-2Nn"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJ7-H8-nH7" customClass="PatchButton">
-                        <rect key="frame" x="618" y="563" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z9E-SR-w9t" customClass="PatchButton">
+                        <rect key="frame" x="626" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jiP-e1-TQa">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="cLS-Kg-t2L">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="avL-KG-OVU"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="PAM-Pm-VNH"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NuY-zP-0HV" customClass="PatchButton">
-                        <rect key="frame" x="618" y="544" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bw9-Eq-zRK" customClass="PatchButton">
+                        <rect key="frame" x="626" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ChN-BB-kGY">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="F1w-gV-mQP">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="R3R-D9-s9w"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="0u2-bx-o0F"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nQ4-jU-HCq" customClass="PatchButton">
-                        <rect key="frame" x="618" y="525" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DUJ-3J-0fk" customClass="PatchButton">
+                        <rect key="frame" x="626" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="G3u-fX-jrn">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="nen-mK-RYe">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="RkZ-rw-Dh0"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="JSJ-uz-DNn"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zcS-oA-r3z" customClass="PatchButton">
-                        <rect key="frame" x="618" y="506" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sG1-tq-STu" customClass="PatchButton">
+                        <rect key="frame" x="626" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="z54-2K-a2J">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="wz0-E7-WTT">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="DeQ-VY-73U"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="4Zy-qT-Svy"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Wa-EV-CNA" customClass="PatchButton">
-                        <rect key="frame" x="618" y="487" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iri-vf-nkY" customClass="PatchButton">
+                        <rect key="frame" x="626" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="yra-iw-Wgu">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="eTA-zg-3Hd">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="A5O-0Z-8Zj"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="9bx-vY-d6u"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aog-ya-ZN0" customClass="PatchButton">
-                        <rect key="frame" x="618" y="468" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ggg-ls-MIc" customClass="PatchButton">
+                        <rect key="frame" x="626" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ndq-zN-ggt">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="aId-c4-GBh">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="uoA-M7-SRk"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="CUg-ze-LU7"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mTZ-G0-mg5" customClass="PatchButton">
-                        <rect key="frame" x="618" y="449" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uDp-p2-Oo7" customClass="PatchButton">
+                        <rect key="frame" x="626" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Pa5-cN-0nf">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="8md-vd-Zrd">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="lXw-hz-N92"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="gib-te-Owo"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jFC-6q-XKI" customClass="PatchButton">
-                        <rect key="frame" x="618" y="430" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k2e-so-mef" customClass="PatchButton">
+                        <rect key="frame" x="626" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="1z8-Kr-2ph">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="EwL-b5-Hfv">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="sEh-HP-aEq"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="jyW-ou-mFj"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z84-Rv-vdl" customClass="PatchButton">
-                        <rect key="frame" x="637" y="563" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A8a-BU-7cg" customClass="PatchButton">
+                        <rect key="frame" x="645" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="E31-fo-3HH">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="lX7-Tx-xP3">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="wM8-MC-czl"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="c8m-n2-iUE"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WgC-A8-wWB" customClass="PatchButton">
-                        <rect key="frame" x="637" y="544" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Neu-cn-BW0" customClass="PatchButton">
+                        <rect key="frame" x="645" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="B3u-m1-IzO">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="GYp-06-lus">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="aEG-DL-Wks"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="gJM-vB-lIX"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9z-Bv-ydp" customClass="PatchButton">
-                        <rect key="frame" x="637" y="525" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jXl-UX-YFm" customClass="PatchButton">
+                        <rect key="frame" x="645" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="xET-RC-vtM">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="f46-ua-Dve">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="rU5-c4-Bjd"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Ma6-aP-5vk"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uQK-hY-Ye2" customClass="PatchButton">
-                        <rect key="frame" x="637" y="506" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WVa-Eh-R9t" customClass="PatchButton">
+                        <rect key="frame" x="645" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Wkj-Yz-Wbe">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3oV-LZ-n1W">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="dCc-Wk-xcl"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="bcA-eh-vHu"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dCl-cg-eX3" customClass="PatchButton">
-                        <rect key="frame" x="637" y="487" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nlF-aI-g1i" customClass="PatchButton">
+                        <rect key="frame" x="645" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="68g-lB-uOj">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="xo4-UW-9WH">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="JiG-pX-hgk"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Ur2-fc-BQh"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XE1-Vx-LhS" customClass="PatchButton">
-                        <rect key="frame" x="637" y="468" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SoD-bn-Awc" customClass="PatchButton">
+                        <rect key="frame" x="645" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="VEr-rw-IVL">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Nsy-fD-5TU">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Lhj-2b-YS8"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="DCT-wN-HYG"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7H-B9-xuR" customClass="PatchButton">
-                        <rect key="frame" x="637" y="449" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNj-Mm-qaw" customClass="PatchButton">
+                        <rect key="frame" x="645" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Pj5-24-krh">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="bfe-bt-GYf">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="oYh-Ec-5D9"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="kIm-zp-vti"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pFU-u9-mGM" customClass="PatchButton">
-                        <rect key="frame" x="637" y="430" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pQu-Id-uum" customClass="PatchButton">
+                        <rect key="frame" x="645" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="TUu-8E-SLs">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="jJp-cF-Wbj">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="ay8-Gf-6jQ"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Og2-sp-S18"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ko-Vj-8Wj" customClass="PatchButton">
-                        <rect key="frame" x="656" y="563" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="66z-kg-yS9" customClass="PatchButton">
+                        <rect key="frame" x="664" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="nrg-cX-GSW">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Gjy-6G-PAe">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="kcN-st-HcF"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="o56-Un-BdQ"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaz-ev-Ahb" customClass="PatchButton">
-                        <rect key="frame" x="656" y="544" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AaK-aj-6Mo" customClass="PatchButton">
+                        <rect key="frame" x="664" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0s9-kI-ZKc">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="ggq-7H-2pu">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="pVv-QS-a1H"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="HKO-Mv-PJG"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzs-Ko-UyY" customClass="PatchButton">
-                        <rect key="frame" x="656" y="525" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2I-ex-luR" customClass="PatchButton">
+                        <rect key="frame" x="664" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ykY-Ix-UOT">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="aDE-0M-4H7">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="8dc-4k-zHK"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="qvV-LM-4En"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HiE-ux-bz0" customClass="PatchButton">
-                        <rect key="frame" x="656" y="506" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-ic-0qA" customClass="PatchButton">
+                        <rect key="frame" x="664" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="8Ui-s7-VQW">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="65F-ta-jGi">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="CFq-O9-z9d"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="DgC-bW-aEA"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKf-k3-BlH" customClass="PatchButton">
-                        <rect key="frame" x="656" y="487" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSg-Z1-mVA" customClass="PatchButton">
+                        <rect key="frame" x="664" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="5wO-k2-8GR">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="v0E-Za-PDo">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="c2q-h6-yqk"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="kcC-sn-dZa"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YqE-Ug-VfL" customClass="PatchButton">
-                        <rect key="frame" x="656" y="468" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gj-vu-Mst" customClass="PatchButton">
+                        <rect key="frame" x="664" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ssF-7l-3Qf">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="AbP-y3-eQz">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="4V7-Pv-hAS"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="uLt-DT-aC2"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALt-aP-Vci" customClass="PatchButton">
-                        <rect key="frame" x="656" y="449" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09U-0n-FRH" customClass="PatchButton">
+                        <rect key="frame" x="664" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="uno-WW-UlK">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="c4e-gQ-rtd">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="TSN-BZ-gSc"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Zpf-6i-OfS"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z5g-hu-Vg1" customClass="PatchButton">
-                        <rect key="frame" x="656" y="430" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yK-a4-TOn" customClass="PatchButton">
+                        <rect key="frame" x="664" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="n6G-o2-brl">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="n1z-Uj-q2K">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Zxa-z2-uy8"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="3hq-89-Pn4"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wgm-dV-Ogh" customClass="PatchButton">
-                        <rect key="frame" x="675" y="563" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SV7-Qe-Pci" customClass="PatchButton">
+                        <rect key="frame" x="683" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Lm1-du-smf">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="FKG-u3-enT">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="NzJ-ox-aSV"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="RTh-vP-2cV"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jaM-G2-Hwh" customClass="PatchButton">
-                        <rect key="frame" x="675" y="544" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55T-gC-7GA" customClass="PatchButton">
+                        <rect key="frame" x="683" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="gmX-5c-6cW">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="qpg-bg-RCH">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="CzG-Li-bHi"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Pgj-b7-iX8"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4VT-Gq-95N" customClass="PatchButton">
-                        <rect key="frame" x="675" y="525" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHo-BL-nKf" customClass="PatchButton">
+                        <rect key="frame" x="683" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="zzG-vD-GAY">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="pmT-OB-kc7">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="amj-PD-HLg"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="FoH-d2-q9b"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D1U-l4-aGc" customClass="PatchButton">
-                        <rect key="frame" x="675" y="506" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C4M-gU-r3E" customClass="PatchButton">
+                        <rect key="frame" x="683" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jBD-ZU-R3b">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="BPs-7q-RWm">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="ifn-hw-RIl"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="srW-2M-lpw"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8J0-xF-CHt" customClass="PatchButton">
-                        <rect key="frame" x="675" y="487" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GbR-Zb-JpY" customClass="PatchButton">
+                        <rect key="frame" x="683" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="2qN-Km-Xt0">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5dj-8R-lAB">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="4El-fw-Ob2"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Ryd-ug-EfA"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1PC-mj-Mk0" customClass="PatchButton">
-                        <rect key="frame" x="675" y="468" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2w-R4-jKC" customClass="PatchButton">
+                        <rect key="frame" x="683" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="2DP-rc-n0W">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="2HF-cv-eOh">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="0wa-6g-Ja4"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="PKF-KE-dp2"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zak-V4-xP6" customClass="PatchButton">
-                        <rect key="frame" x="675" y="449" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vOs-fO-nvH" customClass="PatchButton">
+                        <rect key="frame" x="683" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="qr6-SX-c16">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3Lv-hY-CfD">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="dtI-zb-mfK"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="8ck-6k-LwW"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h78-hH-t1v" customClass="PatchButton">
-                        <rect key="frame" x="675" y="430" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UrD-hw-eXo" customClass="PatchButton">
+                        <rect key="frame" x="683" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="VOO-cX-zDc">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="B6l-6D-4Rw">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="KMe-El-q8c"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="WNj-CX-pJf"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tjn-pf-mhJ" customClass="PatchButton">
-                        <rect key="frame" x="694" y="563" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDl-9E-drj" customClass="PatchButton">
+                        <rect key="frame" x="702" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="yWO-gM-h3H">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="2ep-yz-NGU">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="S1s-fz-am9"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Sqn-6v-ZCy"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmZ-wO-1qO" customClass="PatchButton">
-                        <rect key="frame" x="694" y="544" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PQi-KF-dYA" customClass="PatchButton">
+                        <rect key="frame" x="702" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="8mQ-Na-Cpc">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="HAq-UK-dOV">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="T7b-Hk-Gjb"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="uXa-dF-Zaw"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AY7-xS-bCT" customClass="PatchButton">
-                        <rect key="frame" x="694" y="525" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SbG-tZ-BU9" customClass="PatchButton">
+                        <rect key="frame" x="702" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="gkw-kj-v1E">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="a2f-vc-PW0">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="NPa-lu-cc4"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Crh-Cc-pOA"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-pV-8f1" customClass="PatchButton">
-                        <rect key="frame" x="694" y="506" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzl-JJ-tDP" customClass="PatchButton">
+                        <rect key="frame" x="702" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Esh-4Q-edi">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="FR6-wV-Gg8">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="5Jq-S1-PCX"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="SAd-T4-WW6"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N1S-aQ-uZu" customClass="PatchButton">
-                        <rect key="frame" x="694" y="487" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tTr-7J-EKo" customClass="PatchButton">
+                        <rect key="frame" x="702" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Qtc-Bv-oA3">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Vw4-Wn-OEA">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="E8g-MS-VC7"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="qcU-wo-JWn"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mmz-Bb-8i5" customClass="PatchButton">
-                        <rect key="frame" x="694" y="468" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7It-yk-3Et" customClass="PatchButton">
+                        <rect key="frame" x="702" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="v97-aY-UrU">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="F87-7A-1rU">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="B7o-v3-uIe"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="1BI-bM-zoL"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DeC-ls-5nO" customClass="PatchButton">
-                        <rect key="frame" x="694" y="449" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OmW-B3-APQ" customClass="PatchButton">
+                        <rect key="frame" x="702" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="2Tk-df-8IJ">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="pfX-02-Fem">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="vkF-PX-22p"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="ABX-nN-85b"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NnE-is-Vij" customClass="PatchButton">
-                        <rect key="frame" x="694" y="430" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3C-qe-G0h" customClass="PatchButton">
+                        <rect key="frame" x="702" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="iEL-e6-Pl4">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="bq9-VH-vje">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="hAd-Ds-hVF"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="xbO-8I-5qm"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xbd-CC-Vug" customClass="PatchButton">
-                        <rect key="frame" x="713" y="563" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QxC-7g-qjd" customClass="PatchButton">
+                        <rect key="frame" x="721" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hZx-Cd-rkX">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="rA0-xj-jq9">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="TAw-kb-XbB"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="s3K-HP-xjG"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P6H-KB-reh" customClass="PatchButton">
-                        <rect key="frame" x="713" y="544" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pe4-sA-g5W" customClass="PatchButton">
+                        <rect key="frame" x="721" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="GDB-le-zhe">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="yL1-ng-GLn">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="utb-Cn-dDV"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="pHn-YG-q59"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7h-sh-MdK" customClass="PatchButton">
-                        <rect key="frame" x="713" y="525" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t2A-Hi-Eve" customClass="PatchButton">
+                        <rect key="frame" x="721" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="omD-cx-0Ob">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="NJV-3V-07P">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="10x-sm-9Gh"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="edC-1r-Hqd"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HLp-Do-ok0" customClass="PatchButton">
-                        <rect key="frame" x="713" y="506" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3e-SE-z0g" customClass="PatchButton">
+                        <rect key="frame" x="721" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ykl-L7-KKw">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="xKw-pd-CDw">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="gCz-n8-UQm"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="j17-km-JD1"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cR3-5g-V12" customClass="PatchButton">
-                        <rect key="frame" x="713" y="487" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONp-IX-B9q" customClass="PatchButton">
+                        <rect key="frame" x="721" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="oaw-uI-utR">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="6Ca-Of-Tb2">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="bwM-ae-owV"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="cuq-4t-NxD"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mzd-Qb-7Uz" customClass="PatchButton">
-                        <rect key="frame" x="713" y="468" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KS0-dm-nDi" customClass="PatchButton">
+                        <rect key="frame" x="721" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="gId-ua-PYo">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="QBq-DR-Tkl">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="D7o-Kn-I70"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="qN7-Uo-DBB"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dVT-yt-UMN" customClass="PatchButton">
-                        <rect key="frame" x="713" y="449" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ycf-ii-wH9" customClass="PatchButton">
+                        <rect key="frame" x="721" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ANP-7f-efi">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="hPs-V4-bU2">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="ERa-d2-aAv"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="7mq-90-Enf"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMU-Vb-6KU" customClass="PatchButton">
-                        <rect key="frame" x="713" y="430" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbM-pY-WLn" customClass="PatchButton">
+                        <rect key="frame" x="721" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="gvi-yT-Xne">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="FB4-8t-s0y">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="DXB-db-Tf6"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="lN8-fZ-Ppe"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OCL-aQ-KCn" customClass="PatchButton">
-                        <rect key="frame" x="732" y="563" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lPU-Ej-di0" customClass="PatchButton">
+                        <rect key="frame" x="740" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="KuX-hk-DyJ">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="efa-qh-v5G">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="g7G-NO-Cc5"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="ZbM-5e-fzO"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rgy-B9-USe" customClass="PatchButton">
-                        <rect key="frame" x="732" y="544" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8pt-ey-vPM" customClass="PatchButton">
+                        <rect key="frame" x="740" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="EIs-2W-wPE">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="ZUY-Ku-8TT">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="npy-wD-ROD"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="ayb-ro-f6Z"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PVq-Uy-1Sg" customClass="PatchButton">
-                        <rect key="frame" x="732" y="525" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yQN-ug-QhI" customClass="PatchButton">
+                        <rect key="frame" x="740" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="lRK-aB-cew">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Ei2-tc-gr4">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="v9W-6x-qNK"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="j32-NB-FoS"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0qo-r3-WVA" customClass="PatchButton">
-                        <rect key="frame" x="732" y="506" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WEm-Uw-TfS" customClass="PatchButton">
+                        <rect key="frame" x="740" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ZLh-ha-Iou">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="yzQ-yK-CHz">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="MIu-pf-cZH"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="wBc-f9-g79"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xRM-W4-M2i" customClass="PatchButton">
-                        <rect key="frame" x="732" y="487" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w7X-tm-be3" customClass="PatchButton">
+                        <rect key="frame" x="740" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="snB-Ts-7Hf">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="t6S-T5-OnW">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="9cH-I1-BW4"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="JyR-BF-n9u"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQo-v9-xNp" customClass="PatchButton">
-                        <rect key="frame" x="732" y="468" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DfT-z1-JRs" customClass="PatchButton">
+                        <rect key="frame" x="740" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="aXW-0b-ThA">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="fcJ-UG-fCY">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="vLh-hM-Csq"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="GNf-hU-Hcf"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUk-pq-cgT" customClass="PatchButton">
-                        <rect key="frame" x="732" y="449" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LX7-L2-J01" customClass="PatchButton">
+                        <rect key="frame" x="740" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Uc8-M4-djf">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Krf-uO-4Jo">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="OaM-0H-P1g"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="C2Q-dJ-frZ"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GEB-Vz-3SC" customClass="PatchButton">
-                        <rect key="frame" x="732" y="430" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgz-ay-mtY" customClass="PatchButton">
+                        <rect key="frame" x="740" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="EWx-aU-q55">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="zzB-a4-Oaq">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="RZO-gy-lAB"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="mmE-If-Bbf"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pRn-5m-Od3" customClass="PatchButton">
-                        <rect key="frame" x="751" y="563" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MdR-2D-Zi1" customClass="PatchButton">
+                        <rect key="frame" x="759" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="AJr-Hd-z7k">
+                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="kNg-q9-NR8">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="zPH-AV-5AN"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="PJ1-iR-g4H"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tlx-CW-jYb" customClass="PatchButton">
-                        <rect key="frame" x="751" y="544" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2LH-5U-rNf" customClass="PatchButton">
+                        <rect key="frame" x="759" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="sbF-J0-U7L">
+                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Dje-Kn-PIk">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="yOs-eA-JWp"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="gyp-0L-SA2"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jFT-O4-IS0" customClass="PatchButton">
-                        <rect key="frame" x="751" y="525" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VAH-a8-vl8" customClass="PatchButton">
+                        <rect key="frame" x="759" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="uYA-ge-M6W">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="70l-i3-kCL">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="bmD-BM-JPO"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="gvc-zM-7Ii"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bsT-Yv-HdO" customClass="PatchButton">
-                        <rect key="frame" x="751" y="506" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mjF-Qq-V5H" customClass="PatchButton">
+                        <rect key="frame" x="759" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="sxm-wf-ZF5">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="ZT8-Eh-XWH">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="r7x-4O-lpR"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="YMy-GU-ZiQ"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iHT-4f-ffK" customClass="PatchButton">
-                        <rect key="frame" x="751" y="487" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQz-zz-u06" customClass="PatchButton">
+                        <rect key="frame" x="759" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="beW-B7-f9D">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3GY-ky-XJV">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="5nJ-s1-IKk"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="pT3-Bl-jUj"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o3y-fm-F4s" customClass="PatchButton">
-                        <rect key="frame" x="751" y="468" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRE-UA-NYq" customClass="PatchButton">
+                        <rect key="frame" x="759" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Iw7-CO-bos">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="EEt-71-EJ7">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="SRh-Df-rdL"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="fYY-cJ-5tZ"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4HN-SL-oIN" customClass="PatchButton">
-                        <rect key="frame" x="751" y="449" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5C-vy-evT" customClass="PatchButton">
+                        <rect key="frame" x="759" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0ey-l2-ePb">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3gb-sJ-MGo">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="qxq-Yb-sAQ"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="Rlb-qD-GuY"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FLS-Tp-76w" customClass="PatchButton">
-                        <rect key="frame" x="751" y="430" width="20" height="20"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2GU-sh-W4r" customClass="PatchButton">
+                        <rect key="frame" x="759" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="kWa-Xk-SrJ">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="c0U-He-OHl">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="rXY-Ar-Qvz"/>
+                            <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="VNI-7L-G4d"/>
                         </connections>
                     </button>
                 </subviews>
@@ -2500,6 +2500,8 @@
         </window>
     </objects>
     <resources>
+        <image name="Button Idle" width="40" height="40"/>
+        <image name="Patch Button Lit" width="40" height="40"/>
         <image name="mks-bkgnd" width="819.20001220703125" height="614.4000244140625"/>
     </resources>
 </document>

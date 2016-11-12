@@ -151,7 +151,7 @@
     MyPacket.packet[0].data[5] = 0x30;  // MKS-50 (Changed from 0x020)
     MyPacket.packet[0].data[6] = 0x01;  // Group #
     // Patch Data
-    MyPacket.packet[0].data[7] = _toneNumber;   // Tone Number
+    MyPacket.packet[0].data[7] = _patchNumber;  // Tone Number
     MyPacket.packet[0].data[8] = 12;            // Key Range Low
     MyPacket.packet[0].data[9] = 109;           // Key Range High
     MyPacket.packet[0].data[10] = 0;            // Portamento Time
@@ -316,6 +316,17 @@
     if(self.lastButtonPressed != nil)
         [self.lastButtonPressed setNextState];
     self.lastButtonPressed = (PatchButton*) sender;
+    self.patchNumber =(int)[[sender title] integerValue];
+    
+    MIDIPacketList MyPacket;
+    
+    MyPacket.numPackets = 1;
+    MyPacket.packet[0].length = 2;
+    MyPacket.packet[0].data[0] = 0xC0;  // Sysex
+    MyPacket.packet[0].data[1] = self.patchNumber; // Value
+    MyPacket.packet[0].timeStamp = 0;
+    
+    SendMidi(self.midiInterface, &MyPacket);
 }
 
 
