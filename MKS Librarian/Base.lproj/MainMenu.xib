@@ -387,268 +387,6 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Format" id="jxT-CU-nIS">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Format" id="GEO-Iw-cKr">
-                        <items>
-                            <menuItem title="Font" id="Gi5-1S-RQB">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Font" systemMenu="font" id="aXa-aM-Jaq">
-                                    <items>
-                                        <menuItem title="Show Fonts" keyEquivalent="t" id="Q5e-8K-NDq">
-                                            <connections>
-                                                <action selector="orderFrontFontPanel:" target="YLy-65-1bz" id="WHr-nq-2xA"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Bold" tag="2" keyEquivalent="b" id="GB9-OM-e27">
-                                            <connections>
-                                                <action selector="addFontTrait:" target="YLy-65-1bz" id="hqk-hr-sYV"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Italic" tag="1" keyEquivalent="i" id="Vjx-xi-njq">
-                                            <connections>
-                                                <action selector="addFontTrait:" target="YLy-65-1bz" id="IHV-OB-c03"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Underline" keyEquivalent="u" id="WRG-CD-K1S">
-                                            <connections>
-                                                <action selector="underline:" target="-1" id="FYS-2b-JAY"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="5gT-KC-WSO"/>
-                                        <menuItem title="Bigger" tag="3" keyEquivalent="+" id="Ptp-SP-VEL">
-                                            <connections>
-                                                <action selector="modifyFont:" target="YLy-65-1bz" id="Uc7-di-UnL"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Smaller" tag="4" keyEquivalent="-" id="i1d-Er-qST">
-                                            <connections>
-                                                <action selector="modifyFont:" target="YLy-65-1bz" id="HcX-Lf-eNd"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="kx3-Dk-x3B"/>
-                                        <menuItem title="Kern" id="jBQ-r6-VK2">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Kern" id="tlD-Oa-oAM">
-                                                <items>
-                                                    <menuItem title="Use Default" id="GUa-eO-cwY">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="useStandardKerning:" target="-1" id="6dk-9l-Ckg"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Use None" id="cDB-IK-hbR">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="turnOffKerning:" target="-1" id="U8a-gz-Maa"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Tighten" id="46P-cB-AYj">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="tightenKerning:" target="-1" id="hr7-Nz-8ro"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Loosen" id="ogc-rX-tC1">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="loosenKerning:" target="-1" id="8i4-f9-FKE"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                </items>
-                                            </menu>
-                                        </menuItem>
-                                        <menuItem title="Ligatures" id="o6e-r0-MWq">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Ligatures" id="w0m-vy-SC9">
-                                                <items>
-                                                    <menuItem title="Use Default" id="agt-UL-0e3">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="useStandardLigatures:" target="-1" id="7uR-wd-Dx6"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Use None" id="J7y-lM-qPV">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="turnOffLigatures:" target="-1" id="iX2-gA-Ilz"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Use All" id="xQD-1f-W4t">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="useAllLigatures:" target="-1" id="KcB-kA-TuK"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                </items>
-                                            </menu>
-                                        </menuItem>
-                                        <menuItem title="Baseline" id="OaQ-X3-Vso">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Baseline" id="ijk-EB-dga">
-                                                <items>
-                                                    <menuItem title="Use Default" id="3Om-Ey-2VK">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="unscript:" target="-1" id="0vZ-95-Ywn"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Superscript" id="Rqc-34-cIF">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="superscript:" target="-1" id="3qV-fo-wpU"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Subscript" id="I0S-gh-46l">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="subscript:" target="-1" id="Q6W-4W-IGz"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Raise" id="2h7-ER-AoG">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="raiseBaseline:" target="-1" id="4sk-31-7Q9"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Lower" id="1tx-W0-xDw">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="lowerBaseline:" target="-1" id="OF1-bc-KW4"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                </items>
-                                            </menu>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="Ndw-q3-faq"/>
-                                        <menuItem title="Show Colors" keyEquivalent="C" id="bgn-CT-cEk">
-                                            <connections>
-                                                <action selector="orderFrontColorPanel:" target="-1" id="mSX-Xz-DV3"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="iMs-zA-UFJ"/>
-                                        <menuItem title="Copy Style" keyEquivalent="c" id="5Vv-lz-BsD">
-                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="copyFont:" target="-1" id="GJO-xA-L4q"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Paste Style" keyEquivalent="v" id="vKC-jM-MkH">
-                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="pasteFont:" target="-1" id="JfD-CL-leO"/>
-                                            </connections>
-                                        </menuItem>
-                                    </items>
-                                </menu>
-                            </menuItem>
-                            <menuItem title="Text" id="Fal-I4-PZk">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Text" id="d9c-me-L2H">
-                                    <items>
-                                        <menuItem title="Align Left" keyEquivalent="{" id="ZM1-6Q-yy1">
-                                            <connections>
-                                                <action selector="alignLeft:" target="-1" id="zUv-R1-uAa"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Center" keyEquivalent="|" id="VIY-Ag-zcb">
-                                            <connections>
-                                                <action selector="alignCenter:" target="-1" id="spX-mk-kcS"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Justify" id="J5U-5w-g23">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="alignJustified:" target="-1" id="ljL-7U-jND"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Align Right" keyEquivalent="}" id="wb2-vD-lq4">
-                                            <connections>
-                                                <action selector="alignRight:" target="-1" id="r48-bG-YeY"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="4s2-GY-VfK"/>
-                                        <menuItem title="Writing Direction" id="H1b-Si-o9J">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Writing Direction" id="8mr-sm-Yjd">
-                                                <items>
-                                                    <menuItem title="Paragraph" enabled="NO" id="ZvO-Gk-QUH">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                    </menuItem>
-                                                    <menuItem id="YGs-j5-SAR">
-                                                        <string key="title">	Default</string>
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="makeBaseWritingDirectionNatural:" target="-1" id="qtV-5e-UBP"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem id="Lbh-J2-qVU">
-                                                        <string key="title">	Left to Right</string>
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="makeBaseWritingDirectionLeftToRight:" target="-1" id="S0X-9S-QSf"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem id="jFq-tB-4Kx">
-                                                        <string key="title">	Right to Left</string>
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="makeBaseWritingDirectionRightToLeft:" target="-1" id="5fk-qB-AqJ"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem isSeparatorItem="YES" id="swp-gr-a21"/>
-                                                    <menuItem title="Selection" enabled="NO" id="cqv-fj-IhA">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                    </menuItem>
-                                                    <menuItem id="Nop-cj-93Q">
-                                                        <string key="title">	Default</string>
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="makeTextWritingDirectionNatural:" target="-1" id="lPI-Se-ZHp"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem id="BgM-ve-c93">
-                                                        <string key="title">	Left to Right</string>
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="makeTextWritingDirectionLeftToRight:" target="-1" id="caW-Bv-w94"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem id="RB4-Sm-HuC">
-                                                        <string key="title">	Right to Left</string>
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="makeTextWritingDirectionRightToLeft:" target="-1" id="EXD-6r-ZUu"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                </items>
-                                            </menu>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="fKy-g9-1gm"/>
-                                        <menuItem title="Show Ruler" id="vLm-3I-IUL">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="toggleRuler:" target="-1" id="FOx-HJ-KwY"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Copy Ruler" keyEquivalent="c" id="MkV-Pr-PK5">
-                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="copyRuler:" target="-1" id="71i-fW-3W2"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Paste Ruler" keyEquivalent="v" id="LVM-kO-fVI">
-                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="pasteRuler:" target="-1" id="cSh-wd-qM2"/>
-                                            </connections>
-                                        </menuItem>
-                                    </items>
-                                </menu>
-                            </menuItem>
-                        </items>
-                    </menu>
-                </menuItem>
                 <menuItem title="View" id="H8h-7b-M4v">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="View" id="HyV-fh-RgO">
@@ -724,7 +462,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="224" y="77" width="819" height="614"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <value key="minSize" type="size" width="819" height="614"/>
             <value key="maxSize" type="size" width="819" height="614"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
@@ -1276,7 +1014,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V6W-s5-Jy5" customClass="PatchButton">
                         <rect key="frame" x="493" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="E2j-PQ-HNH">
+                        <buttonCell key="cell" type="square" title="17" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="E2j-PQ-HNH">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1287,7 +1025,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHH-Ti-Utd" customClass="PatchButton">
                         <rect key="frame" x="493" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="dG9-N9-rAp">
+                        <buttonCell key="cell" type="square" title="18" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="dG9-N9-rAp">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1298,7 +1036,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="25c-X2-7NO" customClass="PatchButton">
                         <rect key="frame" x="493" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Nq9-w6-a8G">
+                        <buttonCell key="cell" type="square" title="19" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Nq9-w6-a8G">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1309,7 +1047,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0u2-6w-1o0" customClass="PatchButton">
                         <rect key="frame" x="493" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="KhU-eJ-k5f">
+                        <buttonCell key="cell" type="square" title="20" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="KhU-eJ-k5f">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1320,7 +1058,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTK-X8-KVL" customClass="PatchButton">
                         <rect key="frame" x="493" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="DfW-hI-YQb">
+                        <buttonCell key="cell" type="square" title="21" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="DfW-hI-YQb">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1331,7 +1069,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MnT-Sw-RWC" customClass="PatchButton">
                         <rect key="frame" x="493" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Log-7k-cnZ">
+                        <buttonCell key="cell" type="square" title="22" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Log-7k-cnZ">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1342,7 +1080,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2Y-LU-MXY" customClass="PatchButton">
                         <rect key="frame" x="493" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="if9-5k-8Hw">
+                        <buttonCell key="cell" type="square" title="23" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="if9-5k-8Hw">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1353,7 +1091,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ser-c9-Mhn" customClass="PatchButton">
                         <rect key="frame" x="512" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="6ZF-hZ-ZAR">
+                        <buttonCell key="cell" type="square" title="24" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="6ZF-hZ-ZAR">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1364,7 +1102,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wDm-l0-ak9" customClass="PatchButton">
                         <rect key="frame" x="512" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="p3Y-fc-2yd">
+                        <buttonCell key="cell" type="square" title="25" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="p3Y-fc-2yd">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1375,7 +1113,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lRH-JK-0lP" customClass="PatchButton">
                         <rect key="frame" x="512" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="js0-db-qX8">
+                        <buttonCell key="cell" type="square" title="26" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="js0-db-qX8">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1386,7 +1124,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgf-2G-egV" customClass="PatchButton">
                         <rect key="frame" x="512" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="QGs-MH-ub7">
+                        <buttonCell key="cell" type="square" title="27" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="QGs-MH-ub7">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1397,7 +1135,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09F-qK-tJU" customClass="PatchButton">
                         <rect key="frame" x="512" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Dli-jR-RWq">
+                        <buttonCell key="cell" type="square" title="28" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Dli-jR-RWq">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1408,7 +1146,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5E-pw-hTB" customClass="PatchButton">
                         <rect key="frame" x="512" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="hgY-QH-TWC">
+                        <buttonCell key="cell" type="square" title="29" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="hgY-QH-TWC">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1419,7 +1157,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FVi-gu-CPU" customClass="PatchButton">
                         <rect key="frame" x="512" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5lk-Iq-k4j">
+                        <buttonCell key="cell" type="square" title="30" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5lk-Iq-k4j">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1430,7 +1168,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVM-Pd-5KV" customClass="PatchButton">
                         <rect key="frame" x="512" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="CMT-Wo-rjA">
+                        <buttonCell key="cell" type="square" title="31" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="CMT-Wo-rjA">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1441,7 +1179,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6k1-Rr-z1n" customClass="PatchButton">
                         <rect key="frame" x="531" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="YXp-uR-GvE">
+                        <buttonCell key="cell" type="square" title="32" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="YXp-uR-GvE">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1452,7 +1190,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hVn-Rt-5LP" customClass="PatchButton">
                         <rect key="frame" x="531" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="1kO-SV-fdy">
+                        <buttonCell key="cell" type="square" title="33" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="1kO-SV-fdy">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1463,7 +1201,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HVB-la-1xN" customClass="PatchButton">
                         <rect key="frame" x="531" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="KXV-5O-y5Y">
+                        <buttonCell key="cell" type="square" title="34" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="KXV-5O-y5Y">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1474,7 +1212,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="35l-z1-DnK" customClass="PatchButton">
                         <rect key="frame" x="531" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="lMH-12-oLn">
+                        <buttonCell key="cell" type="square" title="35" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="lMH-12-oLn">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1485,7 +1223,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xeh-Up-t07" customClass="PatchButton">
                         <rect key="frame" x="531" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="zbw-6y-NNW">
+                        <buttonCell key="cell" type="square" title="36" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="zbw-6y-NNW">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1496,7 +1234,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S1y-Wc-493" customClass="PatchButton">
                         <rect key="frame" x="531" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="KXW-9E-lgR">
+                        <buttonCell key="cell" type="square" title="37" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="KXW-9E-lgR">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1507,7 +1245,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="foW-fX-B3g" customClass="PatchButton">
                         <rect key="frame" x="531" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="m4x-bt-tbA">
+                        <buttonCell key="cell" type="square" title="38" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="m4x-bt-tbA">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1518,7 +1256,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygK-mm-goD" customClass="PatchButton">
                         <rect key="frame" x="531" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3C7-ow-hj4">
+                        <buttonCell key="cell" type="square" title="39" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3C7-ow-hj4">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1529,7 +1267,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="asa-Wg-0Iz" customClass="PatchButton">
                         <rect key="frame" x="550" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="2NV-ts-l7L">
+                        <buttonCell key="cell" type="square" title="40" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="2NV-ts-l7L">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1540,7 +1278,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fCA-Yj-NwD" customClass="PatchButton">
                         <rect key="frame" x="550" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Fsm-97-SjV">
+                        <buttonCell key="cell" type="square" title="41" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Fsm-97-SjV">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1551,7 +1289,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1U-HS-VIl" customClass="PatchButton">
                         <rect key="frame" x="550" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="cAQ-tB-G2H">
+                        <buttonCell key="cell" type="square" title="42" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="cAQ-tB-G2H">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1562,7 +1300,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pyV-5t-yIJ" customClass="PatchButton">
                         <rect key="frame" x="550" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="74Y-F8-OMj">
+                        <buttonCell key="cell" type="square" title="43" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="74Y-F8-OMj">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1573,7 +1311,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5uJ-1H-5br" customClass="PatchButton">
                         <rect key="frame" x="550" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="i8J-hM-y1Q">
+                        <buttonCell key="cell" type="square" title="44" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="i8J-hM-y1Q">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1584,7 +1322,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="15V-ap-EDs" customClass="PatchButton">
                         <rect key="frame" x="550" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="SDg-b3-l2Q">
+                        <buttonCell key="cell" type="square" title="45" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="SDg-b3-l2Q">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1595,7 +1333,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qhb-Gx-ffY" customClass="PatchButton">
                         <rect key="frame" x="550" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Xqq-Y1-VNO">
+                        <buttonCell key="cell" type="square" title="46" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Xqq-Y1-VNO">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1606,7 +1344,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ahu-KN-sKF" customClass="PatchButton">
                         <rect key="frame" x="550" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Kdm-dX-QPO">
+                        <buttonCell key="cell" type="square" title="47" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Kdm-dX-QPO">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1617,7 +1355,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQR-CW-EBZ" customClass="PatchButton">
                         <rect key="frame" x="569" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Ld2-el-UML">
+                        <buttonCell key="cell" type="square" title="48" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Ld2-el-UML">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1628,7 +1366,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fwy-P1-Lxf" customClass="PatchButton">
                         <rect key="frame" x="569" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="xut-cF-oyj">
+                        <buttonCell key="cell" type="square" title="49" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="xut-cF-oyj">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1639,7 +1377,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAt-Bp-6Yw" customClass="PatchButton">
                         <rect key="frame" x="569" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5yU-Ku-zTR">
+                        <buttonCell key="cell" type="square" title="50" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5yU-Ku-zTR">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1650,7 +1388,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="knv-KV-itJ" customClass="PatchButton">
                         <rect key="frame" x="569" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="L2g-Wq-dRW">
+                        <buttonCell key="cell" type="square" title="51" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="L2g-Wq-dRW">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1661,7 +1399,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pad-Fl-tt9" customClass="PatchButton">
                         <rect key="frame" x="569" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="7XX-rj-d5b">
+                        <buttonCell key="cell" type="square" title="52" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="7XX-rj-d5b">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1672,7 +1410,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MA2-zh-I2K" customClass="PatchButton">
                         <rect key="frame" x="569" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5mT-g7-H8a">
+                        <buttonCell key="cell" type="square" title="53" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5mT-g7-H8a">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1683,7 +1421,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCF-lX-ldf" customClass="PatchButton">
                         <rect key="frame" x="569" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="scP-r9-xCk">
+                        <buttonCell key="cell" type="square" title="54" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="scP-r9-xCk">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1694,7 +1432,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZd-Ic-oBV" customClass="PatchButton">
                         <rect key="frame" x="569" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="HN3-wi-h6d">
+                        <buttonCell key="cell" type="square" title="55" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="HN3-wi-h6d">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1705,7 +1443,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7H-FX-bSs" customClass="PatchButton">
                         <rect key="frame" x="588" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="x1a-rp-bhi">
+                        <buttonCell key="cell" type="square" title="56" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="x1a-rp-bhi">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1716,7 +1454,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q7S-Tc-Gux" customClass="PatchButton">
                         <rect key="frame" x="588" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="lVP-Bq-YA1">
+                        <buttonCell key="cell" type="square" title="57" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="lVP-Bq-YA1">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1727,7 +1465,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JPM-Fc-paX" customClass="PatchButton">
                         <rect key="frame" x="588" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="uEy-Yz-1gm">
+                        <buttonCell key="cell" type="square" title="58" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="uEy-Yz-1gm">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1738,7 +1476,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TB2-vh-lX9" customClass="PatchButton">
                         <rect key="frame" x="588" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="bbu-Oi-S2c">
+                        <buttonCell key="cell" type="square" title="59" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="bbu-Oi-S2c">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1749,7 +1487,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNQ-5k-H9g" customClass="PatchButton">
                         <rect key="frame" x="588" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="eff-ZH-fga">
+                        <buttonCell key="cell" type="square" title="60" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="eff-ZH-fga">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1760,7 +1498,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42m-ey-a8Q" customClass="PatchButton">
                         <rect key="frame" x="588" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="ZVJ-Jm-vSa">
+                        <buttonCell key="cell" type="square" title="61" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="ZVJ-Jm-vSa">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1771,7 +1509,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAV-JU-6jw" customClass="PatchButton">
                         <rect key="frame" x="588" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="sIc-Eq-5Mh">
+                        <buttonCell key="cell" type="square" title="62" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="sIc-Eq-5Mh">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1782,7 +1520,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oml-TE-Mvn" customClass="PatchButton">
                         <rect key="frame" x="588" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="XdH-ra-QOD">
+                        <buttonCell key="cell" type="square" title="63" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="XdH-ra-QOD">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1793,7 +1531,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z9E-SR-w9t" customClass="PatchButton">
                         <rect key="frame" x="626" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="cLS-Kg-t2L">
+                        <buttonCell key="cell" type="square" title="64" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="cLS-Kg-t2L">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1804,7 +1542,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bw9-Eq-zRK" customClass="PatchButton">
                         <rect key="frame" x="626" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="F1w-gV-mQP">
+                        <buttonCell key="cell" type="square" title="65" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="F1w-gV-mQP">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1815,7 +1553,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DUJ-3J-0fk" customClass="PatchButton">
                         <rect key="frame" x="626" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="nen-mK-RYe">
+                        <buttonCell key="cell" type="square" title="66" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="nen-mK-RYe">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1826,7 +1564,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sG1-tq-STu" customClass="PatchButton">
                         <rect key="frame" x="626" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="wz0-E7-WTT">
+                        <buttonCell key="cell" type="square" title="67" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="wz0-E7-WTT">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1837,7 +1575,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iri-vf-nkY" customClass="PatchButton">
                         <rect key="frame" x="626" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="eTA-zg-3Hd">
+                        <buttonCell key="cell" type="square" title="68" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="eTA-zg-3Hd">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1848,7 +1586,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ggg-ls-MIc" customClass="PatchButton">
                         <rect key="frame" x="626" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="aId-c4-GBh">
+                        <buttonCell key="cell" type="square" title="69" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="aId-c4-GBh">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1859,7 +1597,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uDp-p2-Oo7" customClass="PatchButton">
                         <rect key="frame" x="626" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="8md-vd-Zrd">
+                        <buttonCell key="cell" type="square" title="70" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="8md-vd-Zrd">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1870,7 +1608,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k2e-so-mef" customClass="PatchButton">
                         <rect key="frame" x="626" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="EwL-b5-Hfv">
+                        <buttonCell key="cell" type="square" title="71" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="EwL-b5-Hfv">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1881,7 +1619,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A8a-BU-7cg" customClass="PatchButton">
                         <rect key="frame" x="645" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="lX7-Tx-xP3">
+                        <buttonCell key="cell" type="square" title="72" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="lX7-Tx-xP3">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1892,7 +1630,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Neu-cn-BW0" customClass="PatchButton">
                         <rect key="frame" x="645" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="GYp-06-lus">
+                        <buttonCell key="cell" type="square" title="73" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="GYp-06-lus">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1903,7 +1641,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jXl-UX-YFm" customClass="PatchButton">
                         <rect key="frame" x="645" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="f46-ua-Dve">
+                        <buttonCell key="cell" type="square" title="74" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="f46-ua-Dve">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1914,7 +1652,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WVa-Eh-R9t" customClass="PatchButton">
                         <rect key="frame" x="645" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3oV-LZ-n1W">
+                        <buttonCell key="cell" type="square" title="75" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3oV-LZ-n1W">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1925,7 +1663,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nlF-aI-g1i" customClass="PatchButton">
                         <rect key="frame" x="645" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="xo4-UW-9WH">
+                        <buttonCell key="cell" type="square" title="76" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="xo4-UW-9WH">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1936,7 +1674,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SoD-bn-Awc" customClass="PatchButton">
                         <rect key="frame" x="645" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Nsy-fD-5TU">
+                        <buttonCell key="cell" type="square" title="77" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Nsy-fD-5TU">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1947,7 +1685,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNj-Mm-qaw" customClass="PatchButton">
                         <rect key="frame" x="645" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="bfe-bt-GYf">
+                        <buttonCell key="cell" type="square" title="78" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="bfe-bt-GYf">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1958,7 +1696,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pQu-Id-uum" customClass="PatchButton">
                         <rect key="frame" x="645" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="jJp-cF-Wbj">
+                        <buttonCell key="cell" type="square" title="79" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="jJp-cF-Wbj">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1969,7 +1707,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="66z-kg-yS9" customClass="PatchButton">
                         <rect key="frame" x="664" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Gjy-6G-PAe">
+                        <buttonCell key="cell" type="square" title="80" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Gjy-6G-PAe">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1980,7 +1718,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AaK-aj-6Mo" customClass="PatchButton">
                         <rect key="frame" x="664" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="ggq-7H-2pu">
+                        <buttonCell key="cell" type="square" title="81" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="ggq-7H-2pu">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1991,7 +1729,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2I-ex-luR" customClass="PatchButton">
                         <rect key="frame" x="664" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="aDE-0M-4H7">
+                        <buttonCell key="cell" type="square" title="82" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="aDE-0M-4H7">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2002,7 +1740,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-ic-0qA" customClass="PatchButton">
                         <rect key="frame" x="664" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="65F-ta-jGi">
+                        <buttonCell key="cell" type="square" title="83" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="65F-ta-jGi">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2013,7 +1751,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSg-Z1-mVA" customClass="PatchButton">
                         <rect key="frame" x="664" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="v0E-Za-PDo">
+                        <buttonCell key="cell" type="square" title="84" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="v0E-Za-PDo">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2024,7 +1762,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gj-vu-Mst" customClass="PatchButton">
                         <rect key="frame" x="664" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="AbP-y3-eQz">
+                        <buttonCell key="cell" type="square" title="85" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="AbP-y3-eQz">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2035,7 +1773,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09U-0n-FRH" customClass="PatchButton">
                         <rect key="frame" x="664" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="c4e-gQ-rtd">
+                        <buttonCell key="cell" type="square" title="86" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="c4e-gQ-rtd">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2046,7 +1784,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yK-a4-TOn" customClass="PatchButton">
                         <rect key="frame" x="664" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="n1z-Uj-q2K">
+                        <buttonCell key="cell" type="square" title="87" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="n1z-Uj-q2K">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2057,7 +1795,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SV7-Qe-Pci" customClass="PatchButton">
                         <rect key="frame" x="683" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="FKG-u3-enT">
+                        <buttonCell key="cell" type="square" title="88" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="FKG-u3-enT">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2068,7 +1806,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55T-gC-7GA" customClass="PatchButton">
                         <rect key="frame" x="683" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="qpg-bg-RCH">
+                        <buttonCell key="cell" type="square" title="89" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="qpg-bg-RCH">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2079,7 +1817,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHo-BL-nKf" customClass="PatchButton">
                         <rect key="frame" x="683" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="pmT-OB-kc7">
+                        <buttonCell key="cell" type="square" title="90" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="pmT-OB-kc7">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2090,7 +1828,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C4M-gU-r3E" customClass="PatchButton">
                         <rect key="frame" x="683" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="BPs-7q-RWm">
+                        <buttonCell key="cell" type="square" title="91" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="BPs-7q-RWm">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2101,7 +1839,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GbR-Zb-JpY" customClass="PatchButton">
                         <rect key="frame" x="683" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5dj-8R-lAB">
+                        <buttonCell key="cell" type="square" title="92" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="5dj-8R-lAB">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2112,7 +1850,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2w-R4-jKC" customClass="PatchButton">
                         <rect key="frame" x="683" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="2HF-cv-eOh">
+                        <buttonCell key="cell" type="square" title="93" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="2HF-cv-eOh">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2123,7 +1861,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vOs-fO-nvH" customClass="PatchButton">
                         <rect key="frame" x="683" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3Lv-hY-CfD">
+                        <buttonCell key="cell" type="square" title="94" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3Lv-hY-CfD">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2134,7 +1872,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UrD-hw-eXo" customClass="PatchButton">
                         <rect key="frame" x="683" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="B6l-6D-4Rw">
+                        <buttonCell key="cell" type="square" title="95" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="B6l-6D-4Rw">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2145,7 +1883,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDl-9E-drj" customClass="PatchButton">
                         <rect key="frame" x="702" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="2ep-yz-NGU">
+                        <buttonCell key="cell" type="square" title="96" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="2ep-yz-NGU">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2156,7 +1894,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PQi-KF-dYA" customClass="PatchButton">
                         <rect key="frame" x="702" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="HAq-UK-dOV">
+                        <buttonCell key="cell" type="square" title="97" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="HAq-UK-dOV">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2167,7 +1905,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SbG-tZ-BU9" customClass="PatchButton">
                         <rect key="frame" x="702" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="a2f-vc-PW0">
+                        <buttonCell key="cell" type="square" title="98" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="a2f-vc-PW0">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2178,7 +1916,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzl-JJ-tDP" customClass="PatchButton">
                         <rect key="frame" x="702" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="FR6-wV-Gg8">
+                        <buttonCell key="cell" type="square" title="99" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="FR6-wV-Gg8">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2189,7 +1927,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tTr-7J-EKo" customClass="PatchButton">
                         <rect key="frame" x="702" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Vw4-Wn-OEA">
+                        <buttonCell key="cell" type="square" title="100" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Vw4-Wn-OEA">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2200,7 +1938,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7It-yk-3Et" customClass="PatchButton">
                         <rect key="frame" x="702" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="F87-7A-1rU">
+                        <buttonCell key="cell" type="square" title="101" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="F87-7A-1rU">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2211,7 +1949,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OmW-B3-APQ" customClass="PatchButton">
                         <rect key="frame" x="702" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="pfX-02-Fem">
+                        <buttonCell key="cell" type="square" title="102" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="pfX-02-Fem">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2222,7 +1960,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3C-qe-G0h" customClass="PatchButton">
                         <rect key="frame" x="702" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="bq9-VH-vje">
+                        <buttonCell key="cell" type="square" title="103" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="bq9-VH-vje">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2233,7 +1971,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QxC-7g-qjd" customClass="PatchButton">
                         <rect key="frame" x="721" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="rA0-xj-jq9">
+                        <buttonCell key="cell" type="square" title="104" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="rA0-xj-jq9">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2244,7 +1982,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pe4-sA-g5W" customClass="PatchButton">
                         <rect key="frame" x="721" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="yL1-ng-GLn">
+                        <buttonCell key="cell" type="square" title="105" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="yL1-ng-GLn">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2255,7 +1993,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t2A-Hi-Eve" customClass="PatchButton">
                         <rect key="frame" x="721" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="NJV-3V-07P">
+                        <buttonCell key="cell" type="square" title="106" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="NJV-3V-07P">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2266,7 +2004,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3e-SE-z0g" customClass="PatchButton">
                         <rect key="frame" x="721" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="xKw-pd-CDw">
+                        <buttonCell key="cell" type="square" title="107" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="xKw-pd-CDw">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2277,7 +2015,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONp-IX-B9q" customClass="PatchButton">
                         <rect key="frame" x="721" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="6Ca-Of-Tb2">
+                        <buttonCell key="cell" type="square" title="108" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="6Ca-Of-Tb2">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2288,7 +2026,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KS0-dm-nDi" customClass="PatchButton">
                         <rect key="frame" x="721" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="QBq-DR-Tkl">
+                        <buttonCell key="cell" type="square" title="109" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="QBq-DR-Tkl">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2299,7 +2037,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ycf-ii-wH9" customClass="PatchButton">
                         <rect key="frame" x="721" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="hPs-V4-bU2">
+                        <buttonCell key="cell" type="square" title="110" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="hPs-V4-bU2">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2310,7 +2048,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbM-pY-WLn" customClass="PatchButton">
                         <rect key="frame" x="721" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="FB4-8t-s0y">
+                        <buttonCell key="cell" type="square" title="111" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="FB4-8t-s0y">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2321,7 +2059,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lPU-Ej-di0" customClass="PatchButton">
                         <rect key="frame" x="740" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="efa-qh-v5G">
+                        <buttonCell key="cell" type="square" title="112" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="efa-qh-v5G">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2332,7 +2070,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8pt-ey-vPM" customClass="PatchButton">
                         <rect key="frame" x="740" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="ZUY-Ku-8TT">
+                        <buttonCell key="cell" type="square" title="113" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="ZUY-Ku-8TT">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2343,7 +2081,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yQN-ug-QhI" customClass="PatchButton">
                         <rect key="frame" x="740" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Ei2-tc-gr4">
+                        <buttonCell key="cell" type="square" title="114" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Ei2-tc-gr4">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2354,7 +2092,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WEm-Uw-TfS" customClass="PatchButton">
                         <rect key="frame" x="740" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="yzQ-yK-CHz">
+                        <buttonCell key="cell" type="square" title="115" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="yzQ-yK-CHz">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2365,7 +2103,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w7X-tm-be3" customClass="PatchButton">
                         <rect key="frame" x="740" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="t6S-T5-OnW">
+                        <buttonCell key="cell" type="square" title="116" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="t6S-T5-OnW">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2376,7 +2114,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DfT-z1-JRs" customClass="PatchButton">
                         <rect key="frame" x="740" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="fcJ-UG-fCY">
+                        <buttonCell key="cell" type="square" title="117" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="fcJ-UG-fCY">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2387,7 +2125,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LX7-L2-J01" customClass="PatchButton">
                         <rect key="frame" x="740" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Krf-uO-4Jo">
+                        <buttonCell key="cell" type="square" title="118" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Krf-uO-4Jo">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2398,7 +2136,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgz-ay-mtY" customClass="PatchButton">
                         <rect key="frame" x="740" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="zzB-a4-Oaq">
+                        <buttonCell key="cell" type="square" title="119" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="zzB-a4-Oaq">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2409,7 +2147,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MdR-2D-Zi1" customClass="PatchButton">
                         <rect key="frame" x="759" y="563" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="1" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="kNg-q9-NR8">
+                        <buttonCell key="cell" type="square" title="120" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="kNg-q9-NR8">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2420,7 +2158,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2LH-5U-rNf" customClass="PatchButton">
                         <rect key="frame" x="759" y="544" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" title="2" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Dje-Kn-PIk">
+                        <buttonCell key="cell" type="square" title="121" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="Dje-Kn-PIk">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2431,7 +2169,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VAH-a8-vl8" customClass="PatchButton">
                         <rect key="frame" x="759" y="525" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="70l-i3-kCL">
+                        <buttonCell key="cell" type="square" title="122" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="70l-i3-kCL">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2442,7 +2180,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mjF-Qq-V5H" customClass="PatchButton">
                         <rect key="frame" x="759" y="506" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="ZT8-Eh-XWH">
+                        <buttonCell key="cell" type="square" title="123" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="ZT8-Eh-XWH">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2453,7 +2191,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQz-zz-u06" customClass="PatchButton">
                         <rect key="frame" x="759" y="487" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3GY-ky-XJV">
+                        <buttonCell key="cell" type="square" title="124" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3GY-ky-XJV">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2464,7 +2202,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRE-UA-NYq" customClass="PatchButton">
                         <rect key="frame" x="759" y="468" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="EEt-71-EJ7">
+                        <buttonCell key="cell" type="square" title="125" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="EEt-71-EJ7">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2475,7 +2213,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5C-vy-evT" customClass="PatchButton">
                         <rect key="frame" x="759" y="449" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3gb-sJ-MGo">
+                        <buttonCell key="cell" type="square" title="126" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="3gb-sJ-MGo">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2486,7 +2224,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2GU-sh-W4r" customClass="PatchButton">
                         <rect key="frame" x="759" y="430" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="c0U-He-OHl">
+                        <buttonCell key="cell" type="square" title="127" bezelStyle="shadowlessSquare" image="Button Idle" imagePosition="overlaps" alignment="center" alternateImage="Patch Button Lit" imageScaling="proportionallyUpOrDown" inset="2" id="c0U-He-OHl">
                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2498,6 +2236,268 @@
             </view>
             <point key="canvasLocation" x="339.5" y="564"/>
         </window>
+        <menuItem title="Format" id="jxT-CU-nIS">
+            <modifierMask key="keyEquivalentModifierMask"/>
+            <menu key="submenu" title="Format" id="GEO-Iw-cKr">
+                <items>
+                    <menuItem title="Font" id="Gi5-1S-RQB">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                        <menu key="submenu" title="Font" systemMenu="font" id="aXa-aM-Jaq">
+                            <items>
+                                <menuItem title="Show Fonts" keyEquivalent="t" id="Q5e-8K-NDq">
+                                    <connections>
+                                        <action selector="orderFrontFontPanel:" target="YLy-65-1bz" id="WHr-nq-2xA"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Bold" tag="2" keyEquivalent="b" id="GB9-OM-e27">
+                                    <connections>
+                                        <action selector="addFontTrait:" target="YLy-65-1bz" id="hqk-hr-sYV"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Italic" tag="1" keyEquivalent="i" id="Vjx-xi-njq">
+                                    <connections>
+                                        <action selector="addFontTrait:" target="YLy-65-1bz" id="IHV-OB-c03"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Underline" keyEquivalent="u" id="WRG-CD-K1S">
+                                    <connections>
+                                        <action selector="underline:" target="-1" id="FYS-2b-JAY"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem isSeparatorItem="YES" id="5gT-KC-WSO"/>
+                                <menuItem title="Bigger" tag="3" keyEquivalent="+" id="Ptp-SP-VEL">
+                                    <connections>
+                                        <action selector="modifyFont:" target="YLy-65-1bz" id="Uc7-di-UnL"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Smaller" tag="4" keyEquivalent="-" id="i1d-Er-qST">
+                                    <connections>
+                                        <action selector="modifyFont:" target="YLy-65-1bz" id="HcX-Lf-eNd"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem isSeparatorItem="YES" id="kx3-Dk-x3B"/>
+                                <menuItem title="Kern" id="jBQ-r6-VK2">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <menu key="submenu" title="Kern" id="tlD-Oa-oAM">
+                                        <items>
+                                            <menuItem title="Use Default" id="GUa-eO-cwY">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="useStandardKerning:" target="-1" id="6dk-9l-Ckg"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Use None" id="cDB-IK-hbR">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="turnOffKerning:" target="-1" id="U8a-gz-Maa"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Tighten" id="46P-cB-AYj">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="tightenKerning:" target="-1" id="hr7-Nz-8ro"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Loosen" id="ogc-rX-tC1">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="loosenKerning:" target="-1" id="8i4-f9-FKE"/>
+                                                </connections>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </menuItem>
+                                <menuItem title="Ligatures" id="o6e-r0-MWq">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <menu key="submenu" title="Ligatures" id="w0m-vy-SC9">
+                                        <items>
+                                            <menuItem title="Use Default" id="agt-UL-0e3">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="useStandardLigatures:" target="-1" id="7uR-wd-Dx6"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Use None" id="J7y-lM-qPV">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="turnOffLigatures:" target="-1" id="iX2-gA-Ilz"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Use All" id="xQD-1f-W4t">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="useAllLigatures:" target="-1" id="KcB-kA-TuK"/>
+                                                </connections>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </menuItem>
+                                <menuItem title="Baseline" id="OaQ-X3-Vso">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <menu key="submenu" title="Baseline" id="ijk-EB-dga">
+                                        <items>
+                                            <menuItem title="Use Default" id="3Om-Ey-2VK">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="unscript:" target="-1" id="0vZ-95-Ywn"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Superscript" id="Rqc-34-cIF">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="superscript:" target="-1" id="3qV-fo-wpU"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Subscript" id="I0S-gh-46l">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="subscript:" target="-1" id="Q6W-4W-IGz"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Raise" id="2h7-ER-AoG">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="raiseBaseline:" target="-1" id="4sk-31-7Q9"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Lower" id="1tx-W0-xDw">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="lowerBaseline:" target="-1" id="OF1-bc-KW4"/>
+                                                </connections>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </menuItem>
+                                <menuItem isSeparatorItem="YES" id="Ndw-q3-faq"/>
+                                <menuItem title="Show Colors" keyEquivalent="C" id="bgn-CT-cEk">
+                                    <connections>
+                                        <action selector="orderFrontColorPanel:" target="-1" id="mSX-Xz-DV3"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem isSeparatorItem="YES" id="iMs-zA-UFJ"/>
+                                <menuItem title="Copy Style" keyEquivalent="c" id="5Vv-lz-BsD">
+                                    <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                    <connections>
+                                        <action selector="copyFont:" target="-1" id="GJO-xA-L4q"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Paste Style" keyEquivalent="v" id="vKC-jM-MkH">
+                                    <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                    <connections>
+                                        <action selector="pasteFont:" target="-1" id="JfD-CL-leO"/>
+                                    </connections>
+                                </menuItem>
+                            </items>
+                        </menu>
+                    </menuItem>
+                    <menuItem title="Text" id="Fal-I4-PZk">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                        <menu key="submenu" title="Text" id="d9c-me-L2H">
+                            <items>
+                                <menuItem title="Align Left" keyEquivalent="{" id="ZM1-6Q-yy1">
+                                    <connections>
+                                        <action selector="alignLeft:" target="-1" id="zUv-R1-uAa"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Center" keyEquivalent="|" id="VIY-Ag-zcb">
+                                    <connections>
+                                        <action selector="alignCenter:" target="-1" id="spX-mk-kcS"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Justify" id="J5U-5w-g23">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <connections>
+                                        <action selector="alignJustified:" target="-1" id="ljL-7U-jND"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Align Right" keyEquivalent="}" id="wb2-vD-lq4">
+                                    <connections>
+                                        <action selector="alignRight:" target="-1" id="r48-bG-YeY"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem isSeparatorItem="YES" id="4s2-GY-VfK"/>
+                                <menuItem title="Writing Direction" id="H1b-Si-o9J">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <menu key="submenu" title="Writing Direction" id="8mr-sm-Yjd">
+                                        <items>
+                                            <menuItem title="Paragraph" enabled="NO" id="ZvO-Gk-QUH">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem id="YGs-j5-SAR">
+                                                <string key="title">	Default</string>
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="makeBaseWritingDirectionNatural:" target="-1" id="qtV-5e-UBP"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem id="Lbh-J2-qVU">
+                                                <string key="title">	Left to Right</string>
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="makeBaseWritingDirectionLeftToRight:" target="-1" id="S0X-9S-QSf"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem id="jFq-tB-4Kx">
+                                                <string key="title">	Right to Left</string>
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="makeBaseWritingDirectionRightToLeft:" target="-1" id="5fk-qB-AqJ"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem isSeparatorItem="YES" id="swp-gr-a21"/>
+                                            <menuItem title="Selection" enabled="NO" id="cqv-fj-IhA">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem id="Nop-cj-93Q">
+                                                <string key="title">	Default</string>
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="makeTextWritingDirectionNatural:" target="-1" id="lPI-Se-ZHp"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem id="BgM-ve-c93">
+                                                <string key="title">	Left to Right</string>
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="makeTextWritingDirectionLeftToRight:" target="-1" id="caW-Bv-w94"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem id="RB4-Sm-HuC">
+                                                <string key="title">	Right to Left</string>
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="makeTextWritingDirectionRightToLeft:" target="-1" id="EXD-6r-ZUu"/>
+                                                </connections>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </menuItem>
+                                <menuItem isSeparatorItem="YES" id="fKy-g9-1gm"/>
+                                <menuItem title="Show Ruler" id="vLm-3I-IUL">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <connections>
+                                        <action selector="toggleRuler:" target="-1" id="FOx-HJ-KwY"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Copy Ruler" keyEquivalent="c" id="MkV-Pr-PK5">
+                                    <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                    <connections>
+                                        <action selector="copyRuler:" target="-1" id="71i-fW-3W2"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Paste Ruler" keyEquivalent="v" id="LVM-kO-fVI">
+                                    <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                    <connections>
+                                        <action selector="pasteRuler:" target="-1" id="cSh-wd-qM2"/>
+                                    </connections>
+                                </menuItem>
+                            </items>
+                        </menu>
+                    </menuItem>
+                </items>
+            </menu>
+        </menuItem>
     </objects>
     <resources>
         <image name="Button Idle" width="40" height="40"/>
