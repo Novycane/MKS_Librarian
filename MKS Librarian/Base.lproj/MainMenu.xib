@@ -487,7 +487,7 @@
                     <slider identifier="0" horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ns-dZ-RbL">
                         <rect key="frame" x="24" y="419" width="24" height="166"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" continuous="YES" alignment="left" identifier="1" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="fRU-df-w2o">
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="127" doubleValue="127" tickMarkPosition="left" numberOfTickMarks="2" sliderType="linear" id="fRU-df-w2o">
                             <font key="font" metaFont="system"/>
                         </sliderCell>
                         <connections>

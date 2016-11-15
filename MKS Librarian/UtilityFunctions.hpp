@@ -32,6 +32,4 @@ static void CheckError(OSStatus error, const char *operation)
     
     exit(1);
 }   // End check error
-
-
 #endif /* UtilityFunctions_hpp */

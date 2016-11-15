@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE1B64731DD796E100A4872D /* Tone.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B64721DD796E100A4872D /* Tone.m */; };
+		BE1B64771DD7973B00A4872D /* Patch.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B64761DD7973B00A4872D /* Patch.m */; };
+		BE1B647A1DD7974D00A4872D /* MKS50.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE1B64791DD7974D00A4872D /* MKS50.mm */; };
 		BE1D5B4A1DBC1EE800CB776E /* MyMIDI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE1D5B461DBC1EE800CB776E /* MyMIDI.cpp */; };
 		BE1D5B4B1DBC1EE800CB776E /* UtilityFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE1D5B481DBC1EE800CB776E /* UtilityFunctions.cpp */; };
 		BE1D5B511DBC1FC600CB776E /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1D5B501DBC1FC600CB776E /* CoreMIDI.framework */; };
@@ -21,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE1B64711DD796E100A4872D /* Tone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tone.h; path = Synth/Tone.h; sourceTree = "<group>"; };
+		BE1B64721DD796E100A4872D /* Tone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tone.m; path = Synth/Tone.m; sourceTree = "<group>"; };
+		BE1B64751DD7973B00A4872D /* Patch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patch.h; sourceTree = "<group>"; };
+		BE1B64761DD7973B00A4872D /* Patch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patch.m; sourceTree = "<group>"; };
+		BE1B64781DD7974D00A4872D /* MKS50.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MKS50.hh; sourceTree = "<group>"; };
+		BE1B64791DD7974D00A4872D /* MKS50.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MKS50.mm; sourceTree = "<group>"; };
 		BE1D5B461DBC1EE800CB776E /* MyMIDI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyMIDI.cpp; sourceTree = "<group>"; };
 		BE1D5B471DBC1EE800CB776E /* MyMIDI.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyMIDI.hpp; sourceTree = "<group>"; };
 		BE1D5B481DBC1EE800CB776E /* UtilityFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UtilityFunctions.cpp; sourceTree = "<group>"; };
@@ -55,6 +64,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE1B64741DD7972500A4872D /* Synth */ = {
+			isa = PBXGroup;
+			children = (
+				BE1B64711DD796E100A4872D /* Tone.h */,
+				BE1B64721DD796E100A4872D /* Tone.m */,
+				BE1B64751DD7973B00A4872D /* Patch.h */,
+				BE1B64761DD7973B00A4872D /* Patch.m */,
+				BE1B64781DD7974D00A4872D /* MKS50.hh */,
+				BE1B64791DD7974D00A4872D /* MKS50.mm */,
+			);
+			name = Synth;
+			sourceTree = "<group>";
+		};
 		BE1D5B4C1DBC1F0E00CB776E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +117,7 @@
 		BE822A0E1DAD914E00A0A637 /* MKS Librarian */ = {
 			isa = PBXGroup;
 			children = (
+				BE1B64741DD7972500A4872D /* Synth */,
 				BE822A0F1DAD914E00A0A637 /* AppDelegate.hh */,
 				BE822A101DAD914E00A0A637 /* AppDelegate.mm */,
 				BE49FA281DBDD2AC0077BD22 /* MKSConstant.h */,
@@ -212,7 +235,10 @@
 			files = (
 				BE822A141DAD914E00A0A637 /* main.m in Sources */,
 				BE1D5B4A1DBC1EE800CB776E /* MyMIDI.cpp in Sources */,
+				BE1B647A1DD7974D00A4872D /* MKS50.mm in Sources */,
 				BE1D5B4B1DBC1EE800CB776E /* UtilityFunctions.cpp in Sources */,
+				BE1B64731DD796E100A4872D /* Tone.m in Sources */,
+				BE1B64771DD7973B00A4872D /* Patch.m in Sources */,
 				BE822A111DAD914E00A0A637 /* AppDelegate.mm in Sources */,
 				BE952E1F1DD6500900B4648F /* PatchButton.m in Sources */,
 			);
