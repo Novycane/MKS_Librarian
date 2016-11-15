@@ -220,7 +220,7 @@
 
 -(bool) changeParam: (int) param toValue: (int)value
 {
-    [self sendToneMessageTo:param withValue:value];
+    [self sendPatchMessageTo:param withValue:value];
     return YES;
 }
 

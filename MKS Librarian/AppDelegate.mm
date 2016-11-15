@@ -127,7 +127,7 @@
 {
     Tone* initTone = [[Tone alloc] init];
     [_Synth loadTone:initTone];
-    //[self initTone];
+    [self updateSliders:initTone];
 }
 
 - (IBAction)fileNewPatchClicked:(id)sender
@@ -135,8 +135,6 @@
     Patch* initPatch = [[Patch alloc] init];
     initPatch.toneNubmer = _Synth.patchNumber;
     [_Synth loadPatch:initPatch];
-    //[self initPatch];
-    
 }
 
 - (IBAction)patchButtonPressed:(id)sender
@@ -145,6 +143,45 @@
         [self.lastButtonPressed setNextState];
     self.lastButtonPressed = (PatchButton*) sender;
     [_Synth changePatch:(int)[[sender title] integerValue]];
+}
+
+- (void) updateSliders: (Tone*) newTone
+{
+    _LFORateSlider.integerValue = newTone.LFO_Rate;
+    _LFODelaySlider.integerValue = newTone.LFO_Delay_Time;
+    _DCORangeSlider.integerValue = newTone.DCO_Range;
+    _DCOLFOSlider. integerValue = newTone.DCO_LFO_Mod_Depth;
+    _DCOEnvelopeSlider.integerValue = newTone.DCO_Env_Mod_Depth;
+    _DCOEnvelopeMode.integerValue = newTone.DCO_Env_Mode;
+    _DCOAfterTouchSlider.integerValue = newTone.DCO_After_Depth;
+    _pulseWaveSlider.integerValue = newTone.DCO_Pulse_Wave;
+    _sawWaveSlider.integerValue = newTone.DCO_Saw_Wave;
+    _subWaveSlider.integerValue = newTone.DCO_Sub_Wave;
+    _subLevelSlider.integerValue = newTone.DCO_Sub_Level;
+    _noiseLevelSlider.integerValue = newTone.DCO_NoiseL_Level;
+    _PWMAmountSlider.integerValue = newTone.DCO_PWM_Depth;
+    _PWMRateSlider.integerValue = newTone.DCO_PWM_Rate;
+    _HPFSlider.integerValue = newTone.HPF_Cuttoff;
+    _VCFFreqSlider.integerValue = newTone.VCF_Cutoff_Freq;
+    _VCFResSlider.integerValue = newTone.VCF_Resonance;
+    _VCFLFOSlider.integerValue = newTone.VCF_LFO_MOD_Depth;
+    _VCFEnvSlider.integerValue = newTone.VCF_Env_MOD_Depth;
+    _VDFEnvShapeSlider.integerValue = newTone.VCF_Env_Mode;
+    _VCFKeyFollowSlider.integerValue = newTone.VCF_Key_Follow;
+    _VCFAfterSlider.integerValue = newTone.VCF_After_Depth;
+    _VCALevelSlider.integerValue = newTone.VCA_Level;
+    _EnvelopeModeSlider.integerValue = newTone.VCA_Env_Mode;
+    _envelopeAfterTouchSlide.integerValue = newTone.VCA_After_Depth;
+    _chorusOnOffSlider.integerValue = newTone.Chorus_On;
+    _chorusRateSlider.integerValue = newTone.Chorus_Rate;
+    _envelopeT1Slider.integerValue = newTone.Env_T1;
+    _envelopeL1Slider.integerValue = newTone.ENV_L1;
+    _envelopeT2Slider.integerValue = newTone.Env_T2;
+    _envelopeL2Slider.integerValue = newTone.Env_L2;
+    _envelopeT3Slider.integerValue = newTone.Env_T3;
+    _envelopeL3Slider.integerValue = newTone.Env_L3;
+    _envelopeT4Slider.integerValue = newTone.Env_T4;
+    _envelopeKeyFollowSlider.integerValue = newTone.Env_Key_Follow;
 }
 
 
