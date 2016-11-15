@@ -205,11 +205,11 @@
     for(int i = 0; i < bounds; i++)
     {
         NSString *key = [toneToLoad getCharAtIndex:i];
-        MyPacket.packet[0].data[42 + i] = [[MKSLetters valueForKey:key] integerValue];
+        MyPacket.packet[0].data[43 + i] = [[MKSLetters valueForKey:key] integerValue];
     }
     for(int i = bounds; i < 10; i++)
     {
-        MyPacket.packet[0].data[42 + i] = [[MKSLetters valueForKey:@" "] integerValue];
+        MyPacket.packet[0].data[43 + i] = [[MKSLetters valueForKey:@" "] integerValue];
     }
     MyPacket.packet[0].data[53] = 0xF7;  // End Sysex
     MyPacket.packet[0].timeStamp = 0;
@@ -220,12 +220,14 @@
 
 -(bool) changeParam: (int) param toValue: (int)value
 {
+    [self sendToneMessageTo:param withValue:value];
     return YES;
 }
 
 -(bool) changePatch: (int) patchNum
 {
     MIDIPacketList MyPacket;
+    self.patchNumber = patchNum;
     
     MyPacket.numPackets = 1;
     MyPacket.packet[0].length = 2;

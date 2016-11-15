@@ -133,6 +133,7 @@
 - (IBAction)fileNewPatchClicked:(id)sender
 {
     Patch* initPatch = [[Patch alloc] init];
+    initPatch.toneNubmer = _Synth.patchNumber;
     [_Synth loadPatch:initPatch];
     //[self initPatch];
     
