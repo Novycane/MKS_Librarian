@@ -55,22 +55,26 @@ void MyMidiReadProc(const MIDIPacketList* pktlist, void* refcon, void* connRefco
         MidiInterface->dataBuffer = [[NSMutableArray alloc] init];
         for(int i=0; i< packet->length; i++)
         {
+            printf("Sysex byte %d : %2X\n", i, packet->data[i]);
             [MidiInterface->dataBuffer addObject:[NSNumber numberWithInt:packet->data[i]]];
             if(packet->data[i] == 0xF7)
             {
                 sysexRecieved = false;
                 MidiInterface->parseBuffer(MidiInterface->dataBuffer);
             }
-            printf("Sysex byte %d : %2X\n", i, packet->data[i]);
-            
         }
     }
     else if (sysexRecieved)
     {
         for(int i=0; i< packet->length; i++)
         {
-            [MidiInterface->dataBuffer addObject:[NSNumber numberWithInt:packet->data[i]]];
             printf("Sysex byte %d : %2X\n", i, packet->data[i]);
+            [MidiInterface->dataBuffer addObject:[NSNumber numberWithInt:packet->data[i]]];
+            if(packet->data[i] == 0xF7)
+            {
+                sysexRecieved = false;
+                MidiInterface->parseBuffer(MidiInterface->dataBuffer);
+            }
         }
     }
     else
