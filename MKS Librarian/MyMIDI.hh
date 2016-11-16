@@ -9,9 +9,11 @@
 #ifndef MyMIDI_hpp
 #define MyMIDI_hpp
 
-#include <CoreMIDI/CoreMIDI.h>
-#include <CoreFoundation/CoreFoundation.h>
-#include <vector>
+#import <CoreMIDI/CoreMIDI.h>
+#import <CoreFoundation/CoreFoundation.h>
+#import <vector>
+#import <Foundation/Foundation.h>
+
 
 typedef struct MyMidiInterface
 {
@@ -24,6 +26,9 @@ typedef struct MyMidiInterface
     
     std::vector<CFStringRef> inputs;
     std::vector<CFStringRef> outputs;
+    
+    NSMutableArray* dataBuffer;
+    bool (*parseBuffer)(NSMutableArray*);
     
 } MyMidiInterface;
 

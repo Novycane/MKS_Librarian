@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Patch.h"
 #import "Tone.h"
-#import "MyMidi.hpp"
+#import "MyMidi.hh"
 
 @interface MKS50 : NSObject
 

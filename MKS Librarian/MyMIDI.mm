@@ -6,8 +6,11 @@
 //  Copyright © 2016 Steven Novak. All rights reserved.
 //
 
-#include "MyMIDI.hpp"
+#include "MyMIDI.hh"
 #include "UtilityFunctions.hpp"
+
+static int byteCount = 0;
+static bool sysexRecieved = false;
 
 void InitMIDI(MyMidiInterface* MidiInterface )
 {
@@ -43,18 +46,36 @@ void MyMidiReadProc(const MIDIPacketList* pktlist, void* refcon, void* connRefco
     MyMidiInterface* MidiInterface = (MyMidiInterface*) refcon;
     MIDIPacket* packet = (MIDIPacket*) pktlist->packet;
     
-    
-     // Need to queue up MIDI data hten process
+    // Need to queue up MIDI data then process
     if(packet->data[0] == 0xF0)
     {
-        printf("\n");
+        // init data buffer routine
+        sysexRecieved = true;
+        byteCount=0;
+        MidiInterface->dataBuffer = [[NSMutableArray alloc] init];
         for(int i=0; i< packet->length; i++)
         {
+            [MidiInterface->dataBuffer addObject:[NSNumber numberWithInt:packet->data[i]]];
+            if(packet->data[i] == 0xF7)
+            {
+                sysexRecieved = false;
+                MidiInterface->parseBuffer(MidiInterface->dataBuffer);
+            }
+            printf("Sysex byte %d : %2X\n", i, packet->data[i]);
+            
+        }
+    }
+    else if (sysexRecieved)
+    {
+        for(int i=0; i< packet->length; i++)
+        {
+            [MidiInterface->dataBuffer addObject:[NSNumber numberWithInt:packet->data[i]]];
             printf("Sysex byte %d : %2X\n", i, packet->data[i]);
         }
     }
     else
     {
+        sysexRecieved = false;
         CheckError(MIDISend(MidiInterface->OutPort, MidiInterface->OutEndpoint, pktlist),
                    "Could Not Echo MIDI Message");
     }

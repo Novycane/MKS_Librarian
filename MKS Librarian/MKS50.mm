@@ -240,6 +240,13 @@
     return YES;
 }
 
+bool parseRawSysex(NSMutableArray* dataBuffer)
+{
+    
+    
+    return true;
+}
+
 #pragma mark Private Methods
 
 -(void) sendPatchMessageTo: (short) MKSTone withValue : (long ) value

@@ -9,7 +9,6 @@
 #import "AppDelegate.hh"
 #import "SliderEnum.hh"
 #import "MKSConstant.h"
-#import "UtilityFunctions.hpp"
 #import "PatchButton.h"
 #import "MKS50.hh"
 
@@ -65,6 +64,7 @@
 {
 
     _Synth = [[MKS50 alloc] init];
+    _Synth.midiInterface->parseBuffer = &parseSysex;
     [_Synth loadPatch:[[Patch alloc] init]];
 }
 
@@ -182,6 +182,13 @@
     _envelopeL3Slider.integerValue = newTone.Env_L3;
     _envelopeT4Slider.integerValue = newTone.Env_T4;
     _envelopeKeyFollowSlider.integerValue = newTone.Env_Key_Follow;
+}
+
+bool parseSysex(NSMutableArray* dataBuffer)
+{
+    printf("Bytes Recived: %d", (int)dataBuffer.count);
+    
+    return YES;
 }
 
 
