@@ -19,7 +19,7 @@
 {
     self = [super init];
     [self setupFunction];
-    self.delegate = newDelegate;
+    self.midiInterface.delegate = self.delegate = newDelegate;
     return self;
 }
 

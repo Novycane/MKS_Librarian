@@ -49,5 +49,6 @@
 @property NSString* text;
 
 -(NSString*) getCharAtIndex :(int) index;
+-(id) initWithHoover;
 
 @end

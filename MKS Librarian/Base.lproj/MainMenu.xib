@@ -114,6 +114,12 @@
                                     <action selector="fileNewToneClicked:" target="Voe-Tx-rLC" id="v9r-5B-Vdg"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="New Hoover Tone" id="n0v-H0-As8">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="fileNewHooverToneClicked:" target="Voe-Tx-rLC" id="1fE-6e-lh4"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
                                 <connections>
                                     <action selector="openDocument:" target="-1" id="bVn-NM-KNZ"/>

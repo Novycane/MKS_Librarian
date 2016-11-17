@@ -62,7 +62,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-
     _Synth = [[MKS50 alloc] initWithDelegate: self];
     [_Synth loadPatch:[[Patch alloc] init]];
     
@@ -123,6 +122,13 @@
     //[self sendPatchMessageTo: [sliderNum integerValue] withValue: [thisSlider integerValue] ];
 }
 
+- (IBAction)fileNewHooverToneClicked:(id)sender
+{
+    Tone* initTone = [[Tone alloc] initWithHoover];
+    [_Synth loadTone:initTone];
+    [self updateSliders:initTone];
+}
+
 - (IBAction)fileNewToneClicked:(id)sender
 {
     Tone* initTone = [[Tone alloc] init];
@@ -150,7 +156,7 @@
     _LFORateSlider.integerValue = newTone.LFO_Rate;
     _LFODelaySlider.integerValue = newTone.LFO_Delay_Time;
     _DCORangeSlider.integerValue = newTone.DCO_Range;
-    _DCOLFOSlider. integerValue = newTone.DCO_LFO_Mod_Depth;
+    _DCOLFOSlider.integerValue = newTone.DCO_LFO_Mod_Depth;
     _DCOEnvelopeSlider.integerValue = newTone.DCO_Env_Mod_Depth;
     _DCOEnvelopeMode.integerValue = newTone.DCO_Env_Mode;
     _DCOAfterTouchSlider.integerValue = newTone.DCO_After_Depth;
@@ -182,6 +188,43 @@
     _envelopeL3Slider.integerValue = newTone.Env_L3;
     _envelopeT4Slider.integerValue = newTone.Env_T4;
     _envelopeKeyFollowSlider.integerValue = newTone.Env_Key_Follow;
+    
+    [_LFORateSlider setNeedsDisplay: YES];
+    [_LFODelaySlider setNeedsDisplay: YES];
+    [_DCORangeSlider setNeedsDisplay: YES];
+    [_DCOLFOSlider setNeedsDisplay: YES];
+    [_DCOEnvelopeSlider setNeedsDisplay: YES];
+    [_DCOEnvelopeMode setNeedsDisplay: YES];
+    [_DCOAfterTouchSlider setNeedsDisplay: YES];
+    [_pulseWaveSlider setNeedsDisplay: YES];
+    [_sawWaveSlider setNeedsDisplay: YES];
+    [_subWaveSlider setNeedsDisplay: YES];
+    [_subLevelSlider setNeedsDisplay: YES];
+    [_noiseLevelSlider setNeedsDisplay: YES];
+    [_PWMAmountSlider setNeedsDisplay: YES];
+    [_PWMRateSlider setNeedsDisplay: YES];
+    [_HPFSlider setNeedsDisplay: YES];
+    [_VCFFreqSlider setNeedsDisplay: YES];
+    [_VCFResSlider setNeedsDisplay: YES];
+    [_VCFLFOSlider setNeedsDisplay: YES];
+    [_VCFEnvSlider  setNeedsDisplay: YES];
+    [_VDFEnvShapeSlider setNeedsDisplay: YES];
+    [_VCFKeyFollowSlider setNeedsDisplay: YES];
+    [_VCFAfterSlider setNeedsDisplay: YES];
+    [_VCALevelSlider setNeedsDisplay: YES];
+    [_EnvelopeModeSlider setNeedsDisplay: YES];
+    [_envelopeAfterTouchSlide setNeedsDisplay: YES];
+    [_chorusOnOffSlider setNeedsDisplay: YES];
+    [_chorusRateSlider setNeedsDisplay: YES];
+    [_envelopeT1Slider setNeedsDisplay: YES];
+    [_envelopeL1Slider setNeedsDisplay: YES];
+    [_envelopeT2Slider setNeedsDisplay: YES];
+    [_envelopeL2Slider setNeedsDisplay: YES];
+    [_envelopeT3Slider setNeedsDisplay: YES];
+    [_envelopeL3Slider setNeedsDisplay: YES];
+    [_envelopeT4Slider setNeedsDisplay: YES];
+    [_envelopeKeyFollowSlider setNeedsDisplay: YES];
+    
 }
 
 -(bool) parseSysex: (NSMutableArray*) dataBuffer
@@ -242,6 +285,7 @@
         
         newTone.Bender_Range  = [[dataBuffer objectAtIndex:i++] intValue];
         
+        [self updateSliders: newTone];
 
     }
     else

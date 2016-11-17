@@ -58,12 +58,9 @@
     return self;
 }
 
--(id) initHoover
+-(id) initWithHoover
 {
-    if (!(self = [super init]))
-    {
-        return nil;
-    }
+    self = [self init];
     
     self.DCO_Env_Mode = 2;
     self.VCF_Env_Mode = 2;

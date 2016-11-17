@@ -30,5 +30,7 @@
 -(void) setClient: (MIDIClientRef) thisClient;
 -(void) setInPort: (MIDIPortRef) thisPort;
 -(void) setOutPort: (MIDIPortRef) thisPort;
+-(void) addInput: (CFStringRef) input;
+-(void) addOutput: (CFStringRef) output;
 
 @end

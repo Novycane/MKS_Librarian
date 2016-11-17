@@ -20,7 +20,7 @@ void InitMIDI(MidiInterface* MyMidiInterface )
     
     CheckError(MIDIClientCreate(CFSTR("Midi Interface"),
                      MyMidiNotifyProc,
-                     &MyMidiInterface,
+                     (__bridge void *) MyMidiInterface,
                      &Client),
                "Couldn't Create MIDI Client");
     [MyMidiInterface setClient:Client];
@@ -28,7 +28,7 @@ void InitMIDI(MidiInterface* MyMidiInterface )
     CheckError(MIDIInputPortCreate(MyMidiInterface.Client,
                         CFSTR("Input Port"),
                         MyMidiReadProc,
-                        &MyMidiInterface,
+                        (__bridge void *) MyMidiInterface,
                         &InPort),
                "Could Not Create Input Port");
     [MyMidiInterface setInPort:InPort];
@@ -254,7 +254,8 @@ void GetInputs(MidiInterface* MyMidiInterface)
                     CFStringAppend(mDeviceName, deviceName);
                     CFStringAppend(mDeviceName, EndpointName);
                     
-                    MyMidiInterface.inputs.push_back(mDeviceName);
+                    //MyMidiInterface.inputs.push_back(mDeviceName);
+                    [MyMidiInterface addInput:mDeviceName];
                 } // End For k
             } // End For j
         }// End If Offline
@@ -305,7 +306,8 @@ void GetOutputs(MidiInterface* MyMidiInterface)
                     CFStringAppend(mDeviceName, deviceName);
                     CFStringAppend(mDeviceName, EndpointName);
                     
-                    MyMidiInterface.outputs.push_back(mDeviceName);
+                    //MyMidiInterface.outputs.push_back(mDeviceName);
+                    [MyMidiInterface addOutput: mDeviceName];
                 } // End For k
             } // End For j
         }// End If Offline

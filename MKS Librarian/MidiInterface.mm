@@ -12,8 +12,22 @@
 
 -(id) init
 {
-    return [super init];
+    self = [super init];
+
+    
+    return self;
 }
+
+-(void) addInput: (CFStringRef) input
+{
+    _inputs.push_back(input);
+}
+
+-(void) addOutput: (CFStringRef) output
+{
+    _outputs.push_back(output);
+}
+
 
 
 @end
