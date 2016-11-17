@@ -12,27 +12,32 @@
 static int byteCount = 0;
 static bool sysexRecieved = false;
 
-void InitMIDI(MyMidiInterface* MidiInterface )
+void InitMIDI(MidiInterface* MyMidiInterface )
 {
+    MIDIClientRef Client;
+    MIDIPortRef InPort;
+    MIDIPortRef OutPort;
+    
     CheckError(MIDIClientCreate(CFSTR("Midi Interface"),
                      MyMidiNotifyProc,
-                     MidiInterface,
-                     &MidiInterface->Client),
+                     &MyMidiInterface,
+                     &Client),
                "Couldn't Create MIDI Client");
+    [MyMidiInterface setClient:Client];
     
-    CheckError(MIDIInputPortCreate(MidiInterface->Client,
+    CheckError(MIDIInputPortCreate(MyMidiInterface.Client,
                         CFSTR("Input Port"),
                         MyMidiReadProc,
-                        MidiInterface,
-                        &MidiInterface->InPort),
+                        &MyMidiInterface,
+                        &InPort),
                "Could Not Create Input Port");
-    
+    [MyMidiInterface setInPort:InPort];
 
-    CheckError(MIDIOutputPortCreate(MidiInterface->Client,
+    CheckError(MIDIOutputPortCreate(MyMidiInterface.Client,
                         CFSTR("Output Port"),
-                        &MidiInterface->OutPort),
+                        &OutPort),
                "Could Not Create Output Port");
-    
+    [MyMidiInterface setOutPort:OutPort];
     
 }
 
@@ -43,7 +48,7 @@ void MyMidiNotifyProc(const MIDINotification* message, void* refcon)
 
 void MyMidiReadProc(const MIDIPacketList* pktlist, void* refcon, void* connRefcon)
 {
-    MyMidiInterface* MidiInterface = (MyMidiInterface*) refcon;
+    MidiInterface* MyMidiInterface = (__bridge MidiInterface*) refcon;
     MIDIPacket* packet = (MIDIPacket*) pktlist->packet;
     
     // Need to queue up MIDI data then process
@@ -52,15 +57,16 @@ void MyMidiReadProc(const MIDIPacketList* pktlist, void* refcon, void* connRefco
         // init data buffer routine
         sysexRecieved = true;
         byteCount=0;
-        MidiInterface->dataBuffer = [[NSMutableArray alloc] init];
+        MyMidiInterface.dataBuffer = [[NSMutableArray alloc] init];
         for(int i=0; i< packet->length; i++)
         {
             printf("Sysex byte %d : %2X\n", i, packet->data[i]);
-            [MidiInterface->dataBuffer addObject:[NSNumber numberWithInt:packet->data[i]]];
+            [MyMidiInterface.dataBuffer addObject:[NSNumber numberWithInt:packet->data[i]]];
             if(packet->data[i] == 0xF7)
             {
                 sysexRecieved = false;
-                MidiInterface->parseBuffer(MidiInterface->dataBuffer);
+                //MyMidiInterface->parseBuffer(MidiInterface->dataBuffer);
+                [MyMidiInterface.delegate parseSysex: MyMidiInterface.dataBuffer];
             }
         }
     }
@@ -69,18 +75,18 @@ void MyMidiReadProc(const MIDIPacketList* pktlist, void* refcon, void* connRefco
         for(int i=0; i< packet->length; i++)
         {
             printf("Sysex byte %d : %2X\n", i, packet->data[i]);
-            [MidiInterface->dataBuffer addObject:[NSNumber numberWithInt:packet->data[i]]];
+            [MyMidiInterface.dataBuffer addObject:[NSNumber numberWithInt:packet->data[i]]];
             if(packet->data[i] == 0xF7)
             {
                 sysexRecieved = false;
-                MidiInterface->parseBuffer(MidiInterface->dataBuffer);
+                [MyMidiInterface.delegate parseSysex: MyMidiInterface.dataBuffer];
             }
         }
     }
     else
     {
         sysexRecieved = false;
-        CheckError(MIDISend(MidiInterface->OutPort, MidiInterface->OutEndpoint, pktlist),
+        CheckError(MIDISend(MyMidiInterface.OutPort, MyMidiInterface.OutEndpoint, pktlist),
                    "Could Not Echo MIDI Message");
     }
 }
@@ -90,7 +96,7 @@ void MyMidiReadProc(const MIDIPacketList* pktlist, void* refcon, void* connRefco
 //  Connect Midi Input
 //
 // -------------------------------
-void MyMidiConnectInput(MyMidiInterface* MidiInterface, CFStringRef InputName)
+void MyMidiConnectInput(MidiInterface* MidiInterface, CFStringRef InputName)
 {
     unsigned long numDevices = MIDIGetNumberOfDevices();
     
@@ -132,9 +138,9 @@ void MyMidiConnectInput(MyMidiInterface* MidiInterface, CFStringRef InputName)
                     
                     //if(result == kCFCompareEqualTo)
                     //{
-                        MidiInterface->InEndpoint = ThisEndpoint;
-                        CheckError(MIDIPortConnectSource(MidiInterface->InPort,
-                                                         MidiInterface->InEndpoint,
+                        MidiInterface.InEndpoint = ThisEndpoint;
+                        CheckError(MIDIPortConnectSource(MidiInterface.InPort,
+                                                         MidiInterface.InEndpoint,
                                                          NULL),
                                    "Couldn't Connect MIDI Source");
                       
@@ -153,7 +159,7 @@ void MyMidiConnectInput(MyMidiInterface* MidiInterface, CFStringRef InputName)
 //
 // -------------------------------
 
-void MyMidiConnectOutput(MyMidiInterface* MidiInterface, CFStringRef OutputName)
+void MyMidiConnectOutput(MidiInterface* MyMidiInterface, CFStringRef OutputName)
 {
     unsigned long numDevices = MIDIGetNumberOfDevices();
     
@@ -195,7 +201,7 @@ void MyMidiConnectOutput(MyMidiInterface* MidiInterface, CFStringRef OutputName)
                     
                     if(result == kCFCompareEqualTo)
                     {
-                        MidiInterface->OutEndpoint = ThisEndpoint;
+                        MyMidiInterface.OutEndpoint = ThisEndpoint;
                     }
                 } // End For k
             } // End For j
@@ -210,7 +216,7 @@ void MyMidiConnectOutput(MyMidiInterface* MidiInterface, CFStringRef OutputName)
 //
 // -------------------------------
 
-void GetInputs(MyMidiInterface* MidiInterface)
+void GetInputs(MidiInterface* MyMidiInterface)
 {
     unsigned long numDevices = MIDIGetNumberOfDevices();
     
@@ -248,7 +254,7 @@ void GetInputs(MyMidiInterface* MidiInterface)
                     CFStringAppend(mDeviceName, deviceName);
                     CFStringAppend(mDeviceName, EndpointName);
                     
-                    MidiInterface->inputs.push_back(mDeviceName);
+                    MyMidiInterface.inputs.push_back(mDeviceName);
                 } // End For k
             } // End For j
         }// End If Offline
@@ -261,7 +267,7 @@ void GetInputs(MyMidiInterface* MidiInterface)
 //
 // -------------------------------
 
-void GetOutputs(MyMidiInterface* MidiInterface)
+void GetOutputs(MidiInterface* MyMidiInterface)
 {
     unsigned long numDevices = MIDIGetNumberOfDevices();
     
@@ -299,7 +305,7 @@ void GetOutputs(MyMidiInterface* MidiInterface)
                     CFStringAppend(mDeviceName, deviceName);
                     CFStringAppend(mDeviceName, EndpointName);
                     
-                    MidiInterface->outputs.push_back(mDeviceName);
+                    MyMidiInterface.outputs.push_back(mDeviceName);
                 } // End For k
             } // End For j
         }// End If Offline
@@ -312,9 +318,9 @@ void GetOutputs(MyMidiInterface* MidiInterface)
 //  Send MIDI
 //
 // -------------------------------
-void SendMidi(MyMidiInterface* MidiInterface, MIDIPacketList* MIDIPackets)
+void SendMidi(MidiInterface* MyMidiInterface, MIDIPacketList* MIDIPackets)
 {
-    CheckError(MIDISend(MidiInterface->OutPort, MidiInterface->OutEndpoint, MIDIPackets),
+    CheckError(MIDISend(MyMidiInterface.OutPort, MyMidiInterface.OutEndpoint, MIDIPackets),
                "Could Not Send MIDI Message");
 }
 

@@ -63,9 +63,9 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 
-    _Synth = [[MKS50 alloc] init];
-    _Synth.midiInterface->parseBuffer = &parseSysex;
+    _Synth = [[MKS50 alloc] initWithDelegate: self];
     [_Synth loadPatch:[[Patch alloc] init]];
+    
 }
 
 
@@ -175,7 +175,7 @@
     _chorusOnOffSlider.integerValue = newTone.Chorus_On;
     _chorusRateSlider.integerValue = newTone.Chorus_Rate;
     _envelopeT1Slider.integerValue = newTone.Env_T1;
-    _envelopeL1Slider.integerValue = newTone.ENV_L1;
+    _envelopeL1Slider.integerValue = newTone.Env_L1;
     _envelopeT2Slider.integerValue = newTone.Env_T2;
     _envelopeL2Slider.integerValue = newTone.Env_L2;
     _envelopeT3Slider.integerValue = newTone.Env_T3;
@@ -184,9 +184,70 @@
     _envelopeKeyFollowSlider.integerValue = newTone.Env_Key_Follow;
 }
 
-bool parseSysex(NSMutableArray* dataBuffer)
+-(bool) parseSysex: (NSMutableArray*) dataBuffer
 {
-    printf("Bytes Recived: %d", (int)dataBuffer.count);
+    if((int)[dataBuffer count] == 31)
+    {
+        // Handle Patch Change
+    }
+    else if((int)[dataBuffer count] == 54)
+    {
+        Tone* newTone = [[Tone alloc] init];
+        int i = 7;
+        
+        newTone.DCO_Env_Mode  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.VCF_Env_Mode  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.VCA_Env_Mode  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.DCO_Pulse_Wave  = [[dataBuffer objectAtIndex:i++] intValue];
+        
+        newTone.DCO_Pulse_Wave  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.DCO_Saw_Wave  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.DCO_Sub_Wave  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.DCO_Range  = [[dataBuffer objectAtIndex:i++] intValue];
+        
+        newTone.DCO_Sub_Level  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.DCO_NoiseL_Level  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.HPF_Cuttoff  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.Chorus_On  = [[dataBuffer objectAtIndex:i++] intValue];
+        
+        newTone.DCO_LFO_Mod_Depth  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.DCO_Env_Mod_Depth= [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.DCO_After_Depth  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.DCO_PWM_Depth  = [[dataBuffer objectAtIndex:i++] intValue];
+        
+        newTone.DCO_PWM_Rate  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.VCF_Cutoff_Freq  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.VCF_Resonance  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.VCF_LFO_MOD_Depth  = [[dataBuffer objectAtIndex:i++] intValue];
+        
+        newTone.VCF_Env_MOD_Depth  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.VCF_Key_Follow  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.VCF_After_Depth = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.VCA_Level  = [[dataBuffer objectAtIndex:i++] intValue];
+        
+        newTone.VCA_After_Depth  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.LFO_Rate  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.LFO_Delay_Time  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.Env_T1  = [[dataBuffer objectAtIndex:i++] intValue];
+        
+        newTone.Env_L1  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.Env_T2  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.Env_L2  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.Env_T3  = [[dataBuffer objectAtIndex:i++] intValue];
+        
+        newTone.Env_L3  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.Env_T4  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.Env_Key_Follow  = [[dataBuffer objectAtIndex:i++] intValue];
+        newTone.Chorus_Rate  = [[dataBuffer objectAtIndex:i++] intValue];
+        
+        newTone.Bender_Range  = [[dataBuffer objectAtIndex:i++] intValue];
+        
+
+    }
+    else
+    {
+        return NO;
+    }
     
     return YES;
 }

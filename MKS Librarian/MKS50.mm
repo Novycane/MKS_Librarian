@@ -7,7 +7,6 @@
 //
 
 #import "MKS50.hh"
-#import "MKSConstant.h"
 
 @implementation MKS50
 {
@@ -15,15 +14,29 @@
 }
 
 #pragma mark Constructors
--(id) init
+
+-(id) initWithDelegate: (id <MKSInterfaceDelegate>) newDelegate
 {
     self = [super init];
+    [self setupFunction];
+    self.delegate = newDelegate;
+    return self;
+}
+
+-(id) init
+{
+    self = [self initWithDelegate: nil];
+    return self;
+}
+
+-(void) setupFunction
+{
     // Insert code here to initialize your application
     self.midiChannel = 0;
     self.patchNumber = 0;
     self.toneNumber = 0;
     
-    self.midiInterface = new MyMidiInterface();
+    self.midiInterface = [[MidiInterface alloc] init];
     
     GetInputs(self.midiInterface);
     GetOutputs(self.midiInterface);
@@ -31,67 +44,67 @@
     InitMIDI(self.midiInterface);
     
     MyMidiConnectInput(self.midiInterface,
-                       self.midiInterface->inputs[3]);
+                       self.midiInterface.inputs[3]);
     MyMidiConnectOutput(self.midiInterface,
-                        self.midiInterface->outputs[2]);
+                        self.midiInterface.outputs[2]);
     
     MKSLetters = @{
-                @"A": @k_A,
-                @"B": @k_B,
-                @"C": @k_C,
-                @"D": @k_D,
-                @"E": @k_E,
-                @"F": @k_F,
-                @"G": @k_G,
-                @"H": @k_H,
-                @"I": @k_I,
-                @"J": @k_J,
-                @"K": @k_K,
-                @"L": @k_L,
-                @"M": @k_M,
-                @"N": @k_N,
-                @"O": @k_O,
-                @"P": @k_P,
-                @"Q": @k_Q,
-                @"R": @k_R,
-                @"S": @k_S,
-                @"T": @k_T,
-                @"U": @k_U,
-                @"V": @k_V,
-                @"W": @k_W,
-                @"X": @k_X,
-                @"Y": @k_Y,
-                @"Z": @k_Z,
-                @"a": @k_a,
-                @"b": @k_b,
-                @"c": @k_c,
-                @"d": @k_d,
-                @"e": @k_e,
-                @"f": @k_f,
-                @"g": @k_g,
-                @"h": @k_h,
-                @"i": @k_i,
-                @"j": @k_j,
-                @"k": @k_k,
-                @"l": @k_l,
-                @"m": @k_m,
-                @"n": @k_n,
-                @"o": @k_o,
-                @"p": @k_p,
-                @"q": @k_q,
-                @"r": @k_r,
-                @"s": @k_s,
-                @"t": @k_t,
-                @"u": @k_u,
-                @"v": @k_v,
-                @"w": @k_w,
-                @"x": @k_x,
-                @"y": @k_y,
-                @"z": @k_z,
-                @" ": @k_space,
-                @"-": @k_minus
-                  };
-    return self;
+                   @"A": @k_A,
+                   @"B": @k_B,
+                   @"C": @k_C,
+                   @"D": @k_D,
+                   @"E": @k_E,
+                   @"F": @k_F,
+                   @"G": @k_G,
+                   @"H": @k_H,
+                   @"I": @k_I,
+                   @"J": @k_J,
+                   @"K": @k_K,
+                   @"L": @k_L,
+                   @"M": @k_M,
+                   @"N": @k_N,
+                   @"O": @k_O,
+                   @"P": @k_P,
+                   @"Q": @k_Q,
+                   @"R": @k_R,
+                   @"S": @k_S,
+                   @"T": @k_T,
+                   @"U": @k_U,
+                   @"V": @k_V,
+                   @"W": @k_W,
+                   @"X": @k_X,
+                   @"Y": @k_Y,
+                   @"Z": @k_Z,
+                   @"a": @k_a,
+                   @"b": @k_b,
+                   @"c": @k_c,
+                   @"d": @k_d,
+                   @"e": @k_e,
+                   @"f": @k_f,
+                   @"g": @k_g,
+                   @"h": @k_h,
+                   @"i": @k_i,
+                   @"j": @k_j,
+                   @"k": @k_k,
+                   @"l": @k_l,
+                   @"m": @k_m,
+                   @"n": @k_n,
+                   @"o": @k_o,
+                   @"p": @k_p,
+                   @"q": @k_q,
+                   @"r": @k_r,
+                   @"s": @k_s,
+                   @"t": @k_t,
+                   @"u": @k_u,
+                   @"v": @k_v,
+                   @"w": @k_w,
+                   @"x": @k_x,
+                   @"y": @k_y,
+                   @"z": @k_z,
+                   @" ": @k_space,
+                   @"-": @k_minus
+                   };
+
 }
 
 #pragma mark Public Methods
@@ -192,7 +205,7 @@
     MyPacket.packet[0].data[31] = toneToLoad.LFO_Rate;          // LFO Rate
     MyPacket.packet[0].data[32] = toneToLoad.LFO_Delay_Time;    // LFO Delay Time
     MyPacket.packet[0].data[33] = toneToLoad.Env_T1;            // Env T1
-    MyPacket.packet[0].data[34] = toneToLoad.ENV_L1;            // Env L1
+    MyPacket.packet[0].data[34] = toneToLoad.Env_L1;            // Env L1
     MyPacket.packet[0].data[35] = toneToLoad.Env_T2;            // Env T2
     MyPacket.packet[0].data[36] = toneToLoad.Env_L2;            // Env L2
     MyPacket.packet[0].data[37] = toneToLoad.Env_T3;            // Env T3

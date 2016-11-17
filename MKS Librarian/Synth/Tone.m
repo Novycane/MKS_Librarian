@@ -44,7 +44,7 @@
     self.LFO_Rate = 0;
     self.LFO_Delay_Time = 0;
     self.Env_T1 = 0;
-    self.ENV_L1 = 127;
+    self.Env_L1 = 127;
     self.Env_T2 = 0;
     self.Env_L2 = 127;
     self.Env_T3 = 0;
@@ -92,7 +92,7 @@
     self.LFO_Rate = 39;
     self.LFO_Delay_Time = 64;
     self.Env_T1 = 99;
-    self.ENV_L1 = 68;
+    self.Env_L1 = 68;
     self.Env_T2 = 78;
     self.Env_L2 = 127;
     self.Env_T3 = 75;

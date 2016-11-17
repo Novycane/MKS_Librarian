@@ -13,8 +13,10 @@
 #import <CoreFoundation/CoreFoundation.h>
 #import <vector>
 #import <Foundation/Foundation.h>
+#import "MKSProtocol.hh"
+#import "MidiInterface.hh"
 
-
+/*
 typedef struct MyMidiInterface
 {
     MIDIClientRef Client;
@@ -28,19 +30,19 @@ typedef struct MyMidiInterface
     std::vector<CFStringRef> outputs;
     
     NSMutableArray* dataBuffer;
-    bool (*parseBuffer)(NSMutableArray*);
     
 } MyMidiInterface;
+*/
 
-void InitMIDI(MyMidiInterface* MidiInterface);
+void InitMIDI(MidiInterface* MidiInterface);
 void MyMidiNotifyProc(const MIDINotification*, void* refcon);
 void MyMidiReadProc(const MIDIPacketList*, void* refcon, void* connRefcon);
-void MyMidiConnectOutput(MyMidiInterface* MidiInterface, CFStringRef OutputName);
-void SendMidi(MyMidiInterface* MidiInterface, MIDIPacketList* MIDIPackets);
-void MyMidiConnectInput(MyMidiInterface* MidiInterface, CFStringRef InputName);
+void MyMidiConnectOutput(MidiInterface* MidiInterface, CFStringRef OutputName);
+void SendMidi(MidiInterface* MidiInterface, MIDIPacketList* MIDIPackets);
+void MyMidiConnectInput(MidiInterface* MidiInterface, CFStringRef InputName);
 
-void GetInputs(MyMidiInterface*);
-void GetOutputs(MyMidiInterface*);
+void GetInputs(MidiInterface*);
+void GetOutputs(MidiInterface*);
 
 OSStatus SendMidiMessage();
 

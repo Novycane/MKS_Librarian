@@ -37,7 +37,7 @@
 @property int LFO_Rate;
 @property int LFO_Delay_Time;
 @property int Env_T1;
-@property int ENV_L1;
+@property int Env_L1;
 @property int Env_T2;
 @property int Env_L2;
 @property int Env_T3;

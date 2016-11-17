@@ -9,16 +9,19 @@
 #import <Foundation/Foundation.h>
 #import "Patch.h"
 #import "Tone.h"
+#import "MKSProtocol.hh"
 #import "MyMidi.hh"
+#import "MKSConstant.h"
 
 @interface MKS50 : NSObject
 
-@property MyMidiInterface *midiInterface;
+@property MidiInterface *midiInterface;
 @property int midiChannel;
 @property int patchNumber;
 @property int toneNumber;
+@property(nonatomic, weak)id <MKSInterfaceDelegate> delegate;
 
-
+-(id) initWithDelegate: (id <MKSInterfaceDelegate>) newDelegate;
 -(bool) autoDetectMidi;
 -(bool) loadPatch:(Patch*) patchToLoad;
 -(bool) loadTone:(Tone*) toneToLoad;
