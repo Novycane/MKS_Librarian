@@ -108,4 +108,121 @@
     return [NSString stringWithFormat:@"%c", [self.text characterAtIndex: index]];
 }
 
+-(void) updateParam : (short) MKSTone withValue : (long ) value
+{
+    switch (MKSTone)
+    {
+        case 0:
+            self.DCO_Env_Mode = (int)value;
+            break;
+        case 1:
+            self.VCF_Env_Mode = (int)value;
+            break;
+        case 2:
+            self.VCA_Env_Mode = (int)value;
+            break;
+        case 3:
+            self.DCO_Pulse_Wave = (int)value;
+            break;
+        case 4:
+            self.DCO_Saw_Wave = (int)value;
+            break;
+        case 5:
+            self.DCO_Sub_Wave = (int)value;
+            break;
+        case 6:
+            self.DCO_Range = (int)value;
+            break;
+        case 7:
+            self.DCO_Sub_Level = (int)value;
+            break;
+        case 8:
+            self.DCO_NoiseL_Level = (int)value;
+            break;
+        case 9:
+            self.HPF_Cuttoff = (int)value;
+            break;
+        case 10:
+            self.Chorus_On = (int)value;
+            break;
+        case 11:
+            self.DCO_LFO_Mod_Depth = (int)value;
+            break;
+        case 12:
+            self.DCO_Env_Mod_Depth = (int)value;
+            break;
+        case 13:
+            self.DCO_After_Depth = (int)value;
+            break;
+        case 14:
+            self.DCO_PWM_Depth = (int)value;
+            break;
+        case 15:
+            self.DCO_PWM_Rate = (int)value;
+            break;
+        case 16:
+            self.VCF_Cutoff_Freq = (int)value;
+            break;
+        case 17:
+            self.VCF_Resonance = (int)value;
+            break;
+        case 18:
+            self.VCF_LFO_MOD_Depth = (int)value;
+            break;
+        case 19:
+            self.VCF_Env_MOD_Depth = (int)value;
+            break;
+        case 20:
+            self.VCF_Key_Follow = (int)value;
+            break;
+        case 21:
+            self.VCF_After_Depth = (int)value;
+            break;
+        case 22:
+            self.VCA_Level = (int)value;
+            break;
+        case 23:
+            self.VCA_After_Depth = (int)value;
+            break;
+        case 24:
+            self.LFO_Rate = (int)value;
+            break;
+        case 25:
+            self.LFO_Delay_Time = (int)value;
+            break;
+        case 26:
+            self.Env_T1 = (int)value;
+            break;
+        case 27:
+            self.Env_L1 = (int)value;
+            break;
+        case 28:
+            self.Env_T2 = (int)value;
+            break;
+        case 29:
+            self.Env_L2 = (int)value;
+            break;
+        case 30:
+            self.Env_T3 = (int)value;
+            break;
+        case 31:
+            self.Env_L3 = (int)value;
+            break;
+        case 32:
+            self.Env_T4 = (int)value;
+            break;
+        case 33:
+            self.Env_Key_Follow = (int)value;
+            break;
+        case 34:
+            self.Chorus_Rate = (int)value;
+            break;
+        case 35:
+            self.Bender_Range = (int)value;
+            break;
+        default:
+            break;
+    }
+}
+
 @end

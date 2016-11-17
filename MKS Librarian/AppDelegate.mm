@@ -53,12 +53,19 @@
 @property (weak) IBOutlet NSSlider *envelopeT4Slider;
 @property (weak) IBOutlet NSSlider *envelopeKeyFollowSlider;
 
+@property (weak) IBOutlet NSTextField *toneName;
+
 @property PatchButton* lastButtonPressed;
 
 @end
 
 @implementation AppDelegate
 
+- (IBAction)textDidChange:(id)sender
+{
+    [_Synth updateText:[_toneName stringValue]];
+    //NSLog(@"%@", [_toneName stringValue]);
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {

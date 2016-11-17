@@ -38,6 +38,9 @@
     
     self.midiInterface = [[MidiInterface alloc] init];
     
+    _currentTone = [[Tone alloc] init];
+    _currentPatch = [[Patch alloc] init];
+    
     GetInputs(self.midiInterface);
     GetOutputs(self.midiInterface);
     
@@ -120,6 +123,8 @@
     const char *title = [patchToLoad.text UTF8String];
     int bounds = (int)strlen(title) < 10 ? (int)strlen(title) : 10;
     
+    _currentPatch = patchToLoad;
+    
     MyPacket.numPackets = 1;
     MyPacket.packet[0].length = 31;
     MyPacket.packet[0].data[0] = 0xF0;  // Sysex
@@ -166,6 +171,8 @@
     MIDIPacketList MyPacket;
     const char *title = [toneToLoad.text UTF8String];
     int bounds = (int)strlen(title) < 10 ? (int)strlen(title) : 10;
+    
+    _currentTone = toneToLoad;
     
     MyPacket.numPackets = 1;
     MyPacket.packet[0].length = 54;
@@ -233,7 +240,8 @@
 
 -(bool) changeParam: (int) param toValue: (int)value
 {
-    [self sendPatchMessageTo:param withValue:value];
+    //[self sendPatchMessageTo:param withValue:value];
+    [self sendToneMessageTo:param withValue:value];
     return YES;
 }
 
@@ -280,6 +288,7 @@ bool parseRawSysex(NSMutableArray* dataBuffer)
     MyPacket.packet[0].data[9] = 0xF7;  // End Sysex
     MyPacket.packet[0].timeStamp = 0;
     
+    [_currentTone updateParam:MKSTone withValue:value];
     SendMidi(self.midiInterface, &MyPacket);
 }
 
@@ -295,13 +304,21 @@ bool parseRawSysex(NSMutableArray* dataBuffer)
     MyPacket.packet[0].data[3] = 0x00;  // Midi Channel -- change to variable
     MyPacket.packet[0].data[4] = 0x23;  // MKS-50 Format
     MyPacket.packet[0].data[5] = 0x20;  // MKS-50
-    MyPacket.packet[0].data[6] = 0x02;  // Group #
+    MyPacket.packet[0].data[6] = 0x01;  // Group #
     MyPacket.packet[0].data[7] = MKSTone;  // Parameter
     MyPacket.packet[0].data[8] = value; // Value
     MyPacket.packet[0].data[9] = 0xF7;  // End Sysex
     MyPacket.packet[0].timeStamp = 0;
     
+    [_currentTone updateParam:MKSTone withValue:value];
     SendMidi(self.midiInterface, &MyPacket);
+}
+
+-(bool) updateText: (NSString*) newText
+{
+    _currentTone.text = [NSString stringWithFormat:@"%@", newText];
+    [self loadTone: self.currentTone];
+    return YES;
 }
 
 @end

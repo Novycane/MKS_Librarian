@@ -49,6 +49,7 @@
                 <outlet property="sawWaveSlider" destination="dOf-L0-zwc" id="nac-GA-q51"/>
                 <outlet property="subLevelSlider" destination="Tg1-Rx-Kmc" id="lfg-Si-KNf"/>
                 <outlet property="subWaveSlider" destination="76L-s9-m2n" id="t3U-gR-xe5"/>
+                <outlet property="toneName" destination="8oX-l4-uTF" id="C9r-LH-aJo"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -2238,6 +2239,18 @@
                             <action selector="patchButtonPressed:" target="Voe-Tx-rLC" id="VNI-7L-G4d"/>
                         </connections>
                     </button>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8oX-l4-uTF">
+                        <rect key="frame" x="455" y="585" width="96" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="8JK-Ff-0dR">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="textDidChange:" target="Voe-Tx-rLC" id="w2P-zv-1H8"/>
+                        </connections>
+                    </textField>
                 </subviews>
             </view>
             <point key="canvasLocation" x="339.5" y="564"/>

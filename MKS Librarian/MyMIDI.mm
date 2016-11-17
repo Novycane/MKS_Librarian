@@ -60,7 +60,7 @@ void MyMidiReadProc(const MIDIPacketList* pktlist, void* refcon, void* connRefco
         MyMidiInterface.dataBuffer = [[NSMutableArray alloc] init];
         for(int i=0; i< packet->length; i++)
         {
-            printf("Sysex byte %d : %2X\n", i, packet->data[i]);
+            //printf("Sysex byte %d : %2X\n", i, packet->data[i]);
             [MyMidiInterface.dataBuffer addObject:[NSNumber numberWithInt:packet->data[i]]];
             if(packet->data[i] == 0xF7)
             {
@@ -74,7 +74,7 @@ void MyMidiReadProc(const MIDIPacketList* pktlist, void* refcon, void* connRefco
     {
         for(int i=0; i< packet->length; i++)
         {
-            printf("Sysex byte %d : %2X\n", i, packet->data[i]);
+            //printf("Sysex byte %d : %2X\n", i, packet->data[i]);
             [MyMidiInterface.dataBuffer addObject:[NSNumber numberWithInt:packet->data[i]]];
             if(packet->data[i] == 0xF7)
             {

@@ -19,6 +19,8 @@
 @property int midiChannel;
 @property int patchNumber;
 @property int toneNumber;
+@property Patch* currentPatch;
+@property Tone* currentTone;
 @property(nonatomic, weak)id <MKSInterfaceDelegate> delegate;
 
 -(id) initWithDelegate: (id <MKSInterfaceDelegate>) newDelegate;
@@ -27,5 +29,6 @@
 -(bool) loadTone:(Tone*) toneToLoad;
 -(bool) changeParam: (int) param toValue: (int)value;
 -(bool) changePatch: (int) patchNum;
+-(bool) updateText: (NSString*) newText;
 
 @end

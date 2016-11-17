@@ -50,5 +50,6 @@
 
 -(NSString*) getCharAtIndex :(int) index;
 -(id) initWithHoover;
+-(void) updateParam : (short) MKSTone withValue : (long ) value;
 
 @end
